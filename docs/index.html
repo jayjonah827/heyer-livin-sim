@@ -3,413 +3,404 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Heyer Livin' — Living Higher, Outside the Self Into the Other</title>
-<meta name="description" content="Heyer Livin LLC — Cultural Intelligence Architecture. Art, philosophy, and systems thinking for conscious living.">
+<title>Heyer Livin'</title>
+<meta name="description" content="Heyer Livin LLC — Cultural Intelligence Architecture.">
 <link rel="icon" href="assets/brand/coin-150.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@200;300;400;500&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-/* ═══ RESET ═══ */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-/* ═══ FONT SYSTEM ═══
-   Primary Serif: Cormorant Garamond — elegant, editorial
-   Primary Sans: Inter — clean, modern UI
-   Handwritten: Caveat — stands in until paleography font is built
-   Future: Custom font from Jonah's handwriting replaces Caveat
-*/
 :root {
-  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-hand: 'Caveat', cursive;
-
-  /* Brand Colors */
-  --forest: #1a3a2a;
-  --forest-light: #2d5a3f;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Inter', -apple-system, sans-serif;
+  --hand: 'Caveat', cursive;
+  --black: #000000;
+  --white: #ffffff;
+  --off-white: #e8e4de;
   --gold: #c9a84c;
-  --gold-light: #e0c872;
-  --sage: #8fa68a;
-  --cream: #f5f0e8;
-  --cream-dark: #e8e0d0;
-  --burgundy: #6b2d3e;
-  --ink: #1a1a1a;
-  --white: #fafaf8;
+  --gold-dim: rgba(201,168,76,0.4);
+  --gray: #888888;
+  --dark: #0a0a0a;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: var(--font-sans);
-  background: var(--cream);
-  color: var(--ink);
-  line-height: 1.6;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
-/* ═══ HERO ═══ */
-.hero {
-  min-height: 100vh;
+/* ═══ NAV ═══ */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  background: var(--forest);
-  color: var(--cream);
-  padding: 2rem;
-  position: relative;
-  overflow: hidden;
+  padding: 1.2rem 2.5rem;
+  mix-blend-mode: difference;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.08) 0%, transparent 60%),
-              radial-gradient(ellipse at 70% 80%, rgba(107,45,62,0.06) 0%, transparent 50%);
-  pointer-events: none;
-}
-
-.hero-logo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 2rem;
-  border: 2px solid var(--gold);
-  opacity: 0.9;
-}
-
-.hero h1 {
-  font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
-}
-
-.hero h1 span {
-  color: var(--gold);
-}
-
-.hero-sub {
-  font-family: var(--font-serif);
-  font-size: clamp(1rem, 2.5vw, 1.4rem);
-  font-weight: 400;
-  font-style: italic;
-  opacity: 0.8;
-  margin-bottom: 3rem;
-  max-width: 600px;
-}
-
-/* ═══ DAILY MESSAGE ═══ */
-.message-section {
-  background: var(--forest);
-  padding: 4rem 2rem;
-  text-align: center;
-  border-top: 1px solid rgba(201,168,76,0.2);
-}
-
-.message-container {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.message-label {
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 500;
+.nav-brand {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1.5rem;
 }
 
-.daily-message {
-  font-family: var(--font-hand);
-  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
-  color: var(--cream);
-  line-height: 1.5;
-  min-height: 4em;
+.nav-links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.6s ease;
+  gap: 2rem;
+  list-style: none;
 }
 
-.message-nav {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  transition: opacity 0.3s;
 }
 
-.message-nav button {
-  background: none;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 1.2rem;
-  transition: all 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.nav-links a:hover { opacity: 1; }
 
-.message-nav button:hover {
-  background: var(--gold);
-  color: var(--forest);
-}
-
-.message-counter {
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
-  color: var(--sage);
-  letter-spacing: 0.05em;
-}
-
-/* ═══ SECTION SHARED ═══ */
-section {
-  padding: 5rem 2rem;
-}
-
-.section-title {
-  font-family: var(--font-serif);
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  font-weight: 700;
-  color: var(--forest);
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.section-sub {
-  font-family: var(--font-serif);
-  font-style: italic;
-  text-align: center;
-  color: var(--forest-light);
-  margin-bottom: 3rem;
-  font-size: 1.1rem;
-}
-
-/* ═══ ART GALLERY ═══ */
-.gallery-section {
-  background: var(--white);
-}
-
-.gallery-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-.gallery-item {
+/* ═══ FULL-SCREEN PANEL ═══ */
+.panel {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
-  background: var(--cream);
-  aspect-ratio: 1;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.gallery-item:hover {
-  transform: scale(1.02);
+/* ═══ HERO PANEL ═══ */
+.hero {
+  background: var(--black);
 }
 
-.gallery-item img {
+.hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-}
-
-.gallery-item .overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1.5rem;
-  background: linear-gradient(transparent, rgba(26,58,42,0.85));
-  color: var(--cream);
+  top: 0; left: 0;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 1.2s ease;
 }
 
-.gallery-item:hover .overlay {
-  opacity: 1;
+.hero-img.active { opacity: 1; }
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  pointer-events: none;
 }
 
-.overlay-title {
-  font-family: var(--font-serif);
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.shuffle-btn {
-  display: block;
-  margin: 2.5rem auto 0;
-  background: var(--forest);
-  color: var(--gold);
-  border: none;
-  padding: 0.8rem 2rem;
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
+.hero-title {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  line-height: 1;
   text-transform: uppercase;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: all 0.2s;
+  color: var(--white);
+  text-shadow: 0 0 60px rgba(0,0,0,0.8);
 }
 
-.shuffle-btn:hover {
-  background: var(--forest-light);
+.hero-title em {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--gold);
 }
 
-/* ═══ PHILOSOPHY / ABOUT ═══ */
-.philosophy-section {
-  background: var(--cream);
+/* ═══ ART PANEL ═══ */
+.art-panel {
+  background: var(--black);
 }
 
-.philosophy-grid {
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.art-panel img {
+  max-width: 85vw;
+  max-height: 85vh;
+  object-fit: contain;
+  transition: transform 0.6s ease;
+}
+
+.art-panel:hover img {
+  transform: scale(1.02);
+}
+
+.art-label {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--serif);
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+/* ═══ MESSAGE PANEL ═══ */
+.message-panel {
+  background: var(--black);
+  flex-direction: column;
   gap: 2rem;
 }
 
-.phil-card {
-  text-align: center;
-  padding: 2rem 1.5rem;
-  border: 1px solid var(--cream-dark);
-  border-radius: 4px;
-  background: var(--white);
+.message-tag {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
 }
 
-.phil-number {
-  font-family: var(--font-serif);
-  font-size: 2.5rem;
-  font-weight: 700;
+.message-text {
+  font-family: var(--hand);
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  color: var(--white);
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 2rem;
+  min-height: 3em;
+  transition: opacity 0.5s ease;
+}
+
+.message-controls {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.message-controls button {
+  background: none;
+  border: 1px solid var(--gold-dim);
   color: var(--gold);
-  line-height: 1;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-controls button:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.message-counter {
+  font-size: 0.7rem;
+  color: var(--gray);
+  letter-spacing: 0.05em;
+  min-width: 60px;
+  text-align: center;
+}
+
+/* ═══ PHILOSOPHY PANEL ═══ */
+.phil-panel {
+  background: var(--dark);
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.phil-equation {
+  font-family: var(--serif);
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: var(--white);
+}
+
+.phil-equation span { color: var(--gold); }
+
+.phil-row {
+  display: flex;
+  gap: 4rem;
+  max-width: 900px;
+}
+
+.phil-item {
+  text-align: center;
+  flex: 1;
+}
+
+.phil-num {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--gold);
   margin-bottom: 0.5rem;
 }
 
 .phil-label {
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
+  font-family: var(--sans);
+  font-size: 0.65rem;
   font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.phil-desc {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--off-white);
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+/* ═══ TOPICS PANEL ═══ */
+.topics-panel {
+  background: var(--black);
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.topics-title {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 300;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--forest);
-  margin-bottom: 1rem;
-}
-
-.phil-text {
-  font-family: var(--font-serif);
-  font-size: 0.95rem;
-  color: var(--ink);
-  line-height: 1.6;
-}
-
-/* ═══ TOPICS ═══ */
-.topics-section {
-  background: var(--forest);
-  color: var(--cream);
+  color: var(--white);
 }
 
 .topics-grid {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  max-width: 800px;
 }
 
-.topics-section .section-title { color: var(--cream); }
-.topics-section .section-sub { color: var(--sage); }
-
-.topic-tag {
-  padding: 1rem 1.5rem;
-  border: 1px solid rgba(201,168,76,0.3);
-  border-radius: 2px;
-  text-align: center;
-  font-family: var(--font-sans);
-  font-weight: 500;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
+.topic {
+  padding: 0.6rem 1.8rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--gold-light);
+  color: var(--off-white);
   transition: all 0.2s;
-  cursor: default;
 }
 
-.topic-tag:hover {
+.topic:hover {
   border-color: var(--gold);
-  background: rgba(201,168,76,0.08);
+  color: var(--gold);
 }
 
-.topic-count {
-  display: block;
-  font-family: var(--font-serif);
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--cream);
-  margin-bottom: 0.25rem;
-}
-
-/* ═══ CONTACT / FOOTER ═══ */
-.footer {
-  background: var(--ink);
-  color: var(--cream);
-  padding: 3rem 2rem;
-  text-align: center;
+/* ═══ FOOTER PANEL ═══ */
+.footer-panel {
+  background: var(--black);
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 50vh;
+  scroll-snap-align: end;
 }
 
 .footer-brand {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
+  font-family: var(--serif);
+  font-size: 1.3rem;
   font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 0.5rem;
 }
 
 .footer-tagline {
-  font-family: var(--font-serif);
+  font-family: var(--serif);
   font-style: italic;
-  font-size: 0.9rem;
-  opacity: 0.7;
-  margin-bottom: 1.5rem;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--off-white);
+  opacity: 0.5;
 }
 
 .footer-links {
   display: flex;
   gap: 2rem;
-  justify-content: center;
-  margin-bottom: 1.5rem;
 }
 
 .footer-links a {
-  color: var(--sage);
+  color: var(--gray);
   text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 400;
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
   transition: color 0.2s;
 }
 
 .footer-links a:hover { color: var(--gold); }
 
 .footer-copy {
-  font-size: 0.75rem;
-  opacity: 0.5;
+  font-size: 0.6rem;
+  color: var(--gray);
+  opacity: 0.4;
+}
+
+/* ═══ SCROLL INDICATOR ═══ */
+.scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 3;
+  animation: pulse 2s ease infinite;
+}
+
+.scroll-hint span {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 0.4;
+}
+
+.scroll-hint .arrow {
+  width: 1px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
 }
 
 /* ═══ LIGHTBOX ═══ */
@@ -417,153 +408,133 @@ section {
   display: none;
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.92);
-  z-index: 1000;
+  background: rgba(0,0,0,0.95);
+  z-index: 200;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-
 .lightbox.active { display: flex; }
-
 .lightbox img {
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 95vw;
+  max-height: 95vh;
   object-fit: contain;
-  border-radius: 2px;
 }
-
-/* ═══ SCROLL NAV ═══ */
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  background: rgba(26,58,42,0.95);
-  backdrop-filter: blur(8px);
-  padding: 0.8rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease;
-}
-
-.nav.visible { transform: translateY(0); }
-
-.nav-brand {
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--gold);
-  text-decoration: none;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  color: var(--cream);
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-  opacity: 0.8;
-  transition: opacity 0.2s;
-}
-
-.nav-links a:hover { opacity: 1; color: var(--gold); }
 
 /* ═══ RESPONSIVE ═══ */
 @media (max-width: 768px) {
-  .philosophy-grid { grid-template-columns: 1fr; }
-  .topics-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .nav { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
-}
-
-@media (max-width: 480px) {
-  .gallery-grid { grid-template-columns: 1fr; }
-  .topics-grid { grid-template-columns: 1fr 1fr; }
+  .phil-row { flex-direction: column; gap: 2rem; padding: 0 2rem; }
+  .art-panel img { max-width: 95vw; max-height: 90vh; }
 }
 </style>
 </head>
 <body>
 
-<!-- ═══ NAV ═══ -->
-<nav class="nav" id="nav">
-  <a href="#" class="nav-brand">HR LVN</a>
-  <div class="nav-links">
-    <a href="#message">Daily Message</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#philosophy">Philosophy</a>
-    <a href="#topics">Topics</a>
-  </div>
+<!-- NAV -->
+<nav class="nav">
+  <a href="#" class="nav-brand">Heyer Livin'</a>
+  <ul class="nav-links">
+    <li><a href="#art1">Art</a></li>
+    <li><a href="#message">Words</a></li>
+    <li><a href="#philosophy">Philosophy</a></li>
+    <li><a href="https://github.com/jayjonah827/heyer-livin-sim" target="_blank">Engine</a></li>
+  </ul>
 </nav>
 
-<!-- ═══ HERO ═══ -->
-<header class="hero">
-  <img src="assets/brand/coin-150.png" alt="Heyer Livin coin" class="hero-logo">
-  <h1>Heyer <span>Livin'</span></h1>
-  <p class="hero-sub">Living Higher, Outside the Self Into the Other</p>
-</header>
-
-<!-- ═══ DAILY MESSAGE ═══ -->
-<section class="message-section" id="message">
-  <div class="message-container">
-    <p class="message-label">Daily Message</p>
-    <div class="daily-message" id="dailyMessage">Loading...</div>
-    <div class="message-nav">
-      <button onclick="prevMessage()" aria-label="Previous">&#8592;</button>
-      <span class="message-counter" id="messageCounter">1 / 500</span>
-      <button onclick="nextMessage()" aria-label="Next">&#8594;</button>
-    </div>
+<!-- HERO — cycling through art as background -->
+<section class="panel hero" id="hero">
+  <img class="hero-img active" src="assets/art/painting-fireplace.jpg" alt="Painting">
+  <img class="hero-img" src="assets/art/warrior-framed.jpg" alt="Warrior">
+  <img class="hero-img" src="assets/art/warrior-street.jpg" alt="Street Art">
+  <img class="hero-img" src="assets/art/mindless-media.jpg" alt="Mindless in the Media">
+  <div class="hero-overlay">
+    <h1 class="hero-title">Heyer <em>Livin'</em></h1>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="arrow"></div>
   </div>
 </section>
 
-<!-- ═══ ART GALLERY ═══ -->
-<section class="gallery-section" id="gallery">
-  <h2 class="section-title">Gallery</h2>
-  <p class="section-sub">Original works — randomized on every visit</p>
-  <div class="gallery-grid" id="galleryGrid"></div>
-  <button class="shuffle-btn" onclick="shuffleGallery()">Shuffle</button>
+<!-- ART 1 — Painting -->
+<section class="panel art-panel" id="art1" onclick="openLightbox('assets/art/painting-fireplace.jpg')">
+  <img src="assets/art/painting-fireplace.jpg" alt="The Painting" loading="lazy">
 </section>
 
-<!-- ═══ PHILOSOPHY ═══ -->
-<section class="philosophy-section" id="philosophy">
-  <h2 class="section-title">1 + 2 = 3</h2>
-  <p class="section-sub">The framework beneath everything</p>
-  <div class="philosophy-grid">
-    <div class="phil-card">
-      <div class="phil-number">1</div>
+<!-- ART 2 — Warrior Framed -->
+<section class="panel art-panel" onclick="openLightbox('assets/art/warrior-framed.jpg')">
+  <img src="assets/art/warrior-framed.jpg" alt="Warrior" loading="lazy">
+</section>
+
+<!-- ART 3 — Street Art -->
+<section class="panel art-panel" onclick="openLightbox('assets/art/warrior-street.jpg')">
+  <img src="assets/art/warrior-street.jpg" alt="Street Art" loading="lazy">
+</section>
+
+<!-- ART 4 — GLYPHS / Magritte piece (SVG) -->
+<section class="panel art-panel" onclick="openLightbox('assets/art/asset-7.svg')">
+  <img src="assets/art/asset-7.svg" alt="GLYPHS" loading="lazy" style="max-height:90vh">
+</section>
+
+<!-- ART 5 — Mindless in the Media -->
+<section class="panel art-panel" onclick="openLightbox('assets/art/mindless-media.jpg')">
+  <img src="assets/art/mindless-media.jpg" alt="Mindless in the Media" loading="lazy">
+</section>
+
+<!-- DAILY MESSAGE -->
+<section class="panel message-panel" id="message">
+  <p class="message-tag">Daily Message</p>
+  <div class="message-text" id="dailyMessage">Loading...</div>
+  <div class="message-controls">
+    <button onclick="prevMsg()" aria-label="Previous">&#8592;</button>
+    <span class="message-counter" id="msgCounter">1 / 500</span>
+    <button onclick="nextMsg()" aria-label="Next">&#8594;</button>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="panel phil-panel" id="philosophy">
+  <div class="phil-equation">1 <span>+</span> 2 <span>=</span> 3</div>
+  <div class="phil-row">
+    <div class="phil-item">
+      <div class="phil-num">1</div>
       <div class="phil-label">Self</div>
-      <p class="phil-text">The individual. What you carry, what you measure, what you know before contact.</p>
+      <p class="phil-desc">What you carry before contact. The measured interior.</p>
     </div>
-    <div class="phil-card">
-      <div class="phil-number">2</div>
+    <div class="phil-item">
+      <div class="phil-num">2</div>
       <div class="phil-label">Interaction</div>
-      <p class="phil-text">The exchange. Two systems meeting. The space between signal and response.</p>
+      <p class="phil-desc">Two systems meeting. Signal and response.</p>
     </div>
-    <div class="phil-card">
-      <div class="phil-number">3</div>
+    <div class="phil-item">
+      <div class="phil-num">3</div>
       <div class="phil-label">Reality</div>
-      <p class="phil-text">The product. What exists after convergence. The measured output of living.</p>
+      <p class="phil-desc">The product after convergence. Measured output.</p>
     </div>
   </div>
 </section>
 
-<!-- ═══ TOPICS ═══ -->
-<section class="topics-section" id="topics">
-  <h2 class="section-title">Domains</h2>
-  <p class="section-sub">What the work covers</p>
-  <div class="topics-grid" id="topicsGrid"></div>
+<!-- TOPICS -->
+<section class="panel topics-panel" id="topics">
+  <h2 class="topics-title">Domains</h2>
+  <div class="topics-grid">
+    <div class="topic">Philosophy</div>
+    <div class="topic">Identity</div>
+    <div class="topic">Goals</div>
+    <div class="topic">Art</div>
+    <div class="topic">Business</div>
+    <div class="topic">Education</div>
+    <div class="topic">Justice</div>
+    <div class="topic">Math</div>
+    <div class="topic">Technology</div>
+    <div class="topic">Family</div>
+  </div>
 </section>
 
-<!-- ═══ FOOTER ═══ -->
-<footer class="footer">
+<!-- FOOTER -->
+<section class="panel footer-panel">
   <div class="footer-brand">Heyer Livin' LLC</div>
   <div class="footer-tagline">Cultural Intelligence Architecture</div>
   <div class="footer-links">
@@ -571,77 +542,22 @@ section {
     <a href="mailto:jayjouna@gmail.com">Contact</a>
   </div>
   <div class="footer-copy">&copy; 2026 Heyer Livin' LLC. Oakland, California.</div>
-</footer>
+</section>
 
-<!-- ═══ LIGHTBOX ═══ -->
+<!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <img id="lightboxImg" src="" alt="Artwork">
+  <img id="lightboxImg" src="" alt="Art">
 </div>
 
 <script>
-/* ═══ ART MANIFEST ═══ */
-const artworks = [
-  { file: "Untitled_Artwork 11.png", title: "Untitled 11" },
-  { file: "Untitled_Artwork 14.png", title: "Untitled 14" },
-  { file: "Untitled_Artwork 16.png", title: "Untitled 16" },
-  { file: "Untitled_Artwork 17.png", title: "Untitled 17" },
-  { file: "adam and eve.png", title: "Adam and Eve" },
-  { file: "artboard-1.png", title: "Artboard 1" },
-  { file: "Untitled_Artwork 3.png", title: "Untitled 3" },
-  { file: "Untitled_Artwork 43.png", title: "Untitled 43" },
-  { file: "Untitled_Artwork 44.png", title: "Untitled 44" },
-  { file: "Untitled_Artwork 45.png", title: "Untitled 45" },
-  { file: "Untitled_Artwork 46.png", title: "Untitled 46" },
-  { file: "Untitled_Artwork 48.png", title: "Untitled 48" },
-  { file: "Untitled_Artwork 8.png", title: "Untitled 8" },
-  { file: "Untitled_Artwork 9.png", title: "Untitled 9" },
-  { file: "Asset 2.svg", title: "Asset 2" },
-  { file: "Asset 3.svg", title: "Asset 3" },
-  { file: "Asset 4.svg", title: "Asset 4" },
-  { file: "Asset 5.svg", title: "Asset 5" },
-  { file: "Asset 6.svg", title: "Asset 6" },
-];
-
-/* ═══ TOPIC DATA ═══ */
-const topics = [
-  { name: "Philosophy", count: 108 },
-  { name: "Identity", count: 108 },
-  { name: "Goals", count: 113 },
-  { name: "Art", count: 109 },
-  { name: "Business", count: 79 },
-  { name: "Education", count: 79 },
-  { name: "Justice", count: 68 },
-  { name: "Math", count: 57 },
-  { name: "Technology", count: 49 },
-  { name: "Family", count: 49 },
-];
-
-/* ═══ SHUFFLE ═══ */
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-/* ═══ GALLERY ═══ */
-function renderGallery() {
-  const grid = document.getElementById('galleryGrid');
-  const shuffled = shuffle(artworks);
-  grid.innerHTML = shuffled.map(art => `
-    <div class="gallery-item" onclick="openLightbox('assets/art/${art.file}')">
-      <img src="assets/art/${art.file}" alt="${art.title}" loading="lazy"
-           onerror="this.parentElement.style.display='none'">
-      <div class="overlay">
-        <div class="overlay-title">${art.title}</div>
-      </div>
-    </div>
-  `).join('');
-}
-
-function shuffleGallery() { renderGallery(); }
+/* ═══ HERO IMAGE CYCLE ═══ */
+const heroImgs = document.querySelectorAll('.hero-img');
+let heroIdx = 0;
+setInterval(() => {
+  heroImgs[heroIdx].classList.remove('active');
+  heroIdx = (heroIdx + 1) % heroImgs.length;
+  heroImgs[heroIdx].classList.add('active');
+}, 5000);
 
 /* ═══ LIGHTBOX ═══ */
 function openLightbox(src) {
@@ -652,79 +568,41 @@ function closeLightbox() {
   document.getElementById('lightbox').classList.remove('active');
 }
 
-/* ═══ DAILY MESSAGES ═══ */
-let messages = [];
-let messageIdx = 0;
-
-async function loadMessages() {
+/* ═══ MESSAGES ═══ */
+let msgs = [], msgIdx = 0;
+async function loadMsgs() {
   try {
-    const res = await fetch('data/messages.json');
-    const data = await res.json();
-    messages = shuffle(data.messages);
-    showMessage();
+    const r = await fetch('data/messages.json');
+    const d = await r.json();
+    msgs = d.messages.sort(() => Math.random() - 0.5);
+    showMsg();
   } catch(e) {
     document.getElementById('dailyMessage').textContent =
       'The work speaks when the system is ready.';
   }
 }
-
-function showMessage() {
-  if (!messages.length) return;
+function showMsg() {
+  if (!msgs.length) return;
   const el = document.getElementById('dailyMessage');
   el.style.opacity = 0;
   setTimeout(() => {
-    el.textContent = messages[messageIdx].text;
+    el.textContent = msgs[msgIdx].text;
     el.style.opacity = 1;
-    document.getElementById('messageCounter').textContent =
-      `${messageIdx + 1} / ${messages.length}`;
-  }, 300);
+    document.getElementById('msgCounter').textContent =
+      `${msgIdx + 1} / ${msgs.length}`;
+  }, 250);
 }
-
-function nextMessage() {
-  messageIdx = (messageIdx + 1) % messages.length;
-  showMessage();
-}
-
-function prevMessage() {
-  messageIdx = (messageIdx - 1 + messages.length) % messages.length;
-  showMessage();
-}
-
-/* ═══ TOPICS ═══ */
-function renderTopics() {
-  const grid = document.getElementById('topicsGrid');
-  grid.innerHTML = topics.map(t => `
-    <div class="topic-tag">
-      <span class="topic-count">${t.count}</span>
-      ${t.name}
-    </div>
-  `).join('');
-}
-
-/* ═══ NAV SCROLL ═══ */
-let lastScroll = 0;
-window.addEventListener('scroll', () => {
-  const nav = document.getElementById('nav');
-  const scrollY = window.scrollY;
-  if (scrollY > window.innerHeight * 0.8) {
-    nav.classList.add('visible');
-  } else {
-    nav.classList.remove('visible');
-  }
-  lastScroll = scrollY;
-});
+function nextMsg() { msgIdx = (msgIdx + 1) % msgs.length; showMsg(); }
+function prevMsg() { msgIdx = (msgIdx - 1 + msgs.length) % msgs.length; showMsg(); }
 
 /* ═══ KEYBOARD ═══ */
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'ArrowRight') nextMessage();
-  if (e.key === 'ArrowLeft') prevMessage();
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') nextMsg();
+  if (e.key === 'ArrowLeft') prevMsg();
   if (e.key === 'Escape') closeLightbox();
 });
 
-/* ═══ INIT ═══ */
-renderGallery();
-renderTopics();
-loadMessages();
+loadMsgs();
 </script>
 </body>
 </html>
