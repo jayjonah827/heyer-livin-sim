@@ -1,0 +1,236 @@
+Abstract Wikipedia
+(Discussion)
+General
+Overview — Vision
+Glossary — FAQ
+Function model
+Updates (subscribe)
+Development plan
+Summary — Name
+Goals
+Organization — Requirements
+Architecture — Components
+Tasks — Implementation phases
+(single page version of all above)
+Notes, drafts, discussions
+Overview of notes
+– Pre-generic function model
+– Object creation requirements
+– First evaluation engine
+– Function evaluator call
+– Execution targets
+– Representation of dates
+– Representation of languagesAbstract Wikipedia
+This project consists of two parts: Abstract Wikipedia and Wikifunctions.
+Abstract Wikipedia  is a conceptual extension of Wikidata and the aspirational
+reification of a more accessible  Wikipedia. Its goal is to let more people share more
+knowledge in more languages by automating translation , both linguistically and
+conceptually — that is, abstractively .[1] In Abstract Wikipedia, people can create and
+maintain Wikipedia articles in a language-independent way. With the help of functions
+and code, any non-English language Wikipedia would be able to have this language-
+independent article translated into their respective language.
+Wikifunctions  is a new Wikimedia project that allows anyone to create and maintain
+code. This is useful in many different ways. It provides a catalog of all kinds of functions
+that anyone can call, write, maintai n, and use. It also provides code that translates the
+language-independent article from Abstract Wikipedia into the language of a Wikipedia.
+This allows everyone to read the article in their language. Wikifunctions will use
+knowledge about words and entities from Wikidata.
+This will get us closer to a world where everyone can share in the sum of all knowledge .Project4/1/26, 3:14 AM Abstract Wikipedia - Meta-Wiki
+https://meta.wikimedia.org/wiki/Abstract_Wikipedia 1/7
+– Representation of errors
+– Error messages on ZObjects
+– Reserved ZIDs
+– Canonical and normal
+– User stories
+– NLG system architecture proposal
+– Template Language for Wikifunctions
+Wikidata Abstract Representation
+Discussion topics
+External outreach
+Ideas
+Licensing discussion
+Location of Abstract Content
+Related and previous work
+– Natural language generation
+– Theories of semantics and meaning
+representations
+– Workshops
+ZObject
+Examples & mockups
+Examples
+Examples of functions
+Mockups
+Example: Jupiter
+Examples: Function composition
+Data tools
+Data
+Lexicographical coverage
+Historical
+Papers, press, and videosA "function" is a sequence of computer program instructions that makes a calculation
+based on data you provide. Functions are a form of knowledge that can answer questions,
+such as how many days have passed between two dates or the distance between two cities.
+More complicated functions can answer more complicated questions, such as the volume
+of a three dimensional shape, the distance between Mars and Venus on a certain date, or
+whether two species were alive at the same time. We already use functions in many types
+of knowledge inquiries, such as asking a question to a search engine. The templates known
+as {{convert}} and {{age}} in English are also examples of functionalities that are
+already used in many Wikipedias, written in wikitext and Lua and manually copied to each
+wiki where it's wanted.
+More examples of functions are at Early function examples , and very rough sketches of
+how the interface might look are at Early mockups .
+In short, functions make a calc ulation on the data you provide , and answer a
+question you have about it.
+This new Wikimedia project will build a library of functions, written by volunteers, to help
+answer questions like these across languages. By building out our librar y of functions, we
+can enable more people to access and explore free knowledge in new ways.
+The term “Abstract Wikipedia” itself refers to the long-term goal – that this library of
+functions will someday enable the creation of language-independent articles. Once more
+pieces of this project are in place, this will mean that any wiki – especially small to
+medium wikis – will be able to dram atically increase the number of articles available in
+their language. It also means that editors can share knowledge from their culture and
+contexts with a larger and more global audience.What is a function?
+What is Abstract Wikipedia?4/1/26, 3:14 AM Abstract Wikipedia - Meta-Wiki
+https://meta.wikimedia.org/wiki/Abstract_Wikipedia 2/7
+ (https://meta.wikimedia.org/w/index.php?title=Spec
+ial:Translate/page-Template:Abstract_Wikipedia_navbox
+&language=en&action=page)Historic proposal
+Naming contest — Logo contest
+Archives
+Abstract Wikipedia 
+ (https://meta.wiki
+media.org/w/index.php?title=Special:Translat
+e/page-Template:Wikimedia_engineering_proj
+ect_information&language=en&action=page)
+Start: July 2020
+Team
+members: 
+Product
+Denny Vrandečić (Head
+of Special Projects)
+Amy Tsay (Director of
+Product)
+Laura Morgantini (Senior
+Product Manager)
+Design
+Gregory Onyeahialam
+(Senior UX Designer)
+Community Relations
+Luca Martinelli
+(Movement
+Communications
+Specialist)The new wiki of functions, Wikifunctions , will develop the coding infrastructure to make
+this vision possible. The Abstract Wikipedia part of the project has starte d with our shared
+work on natural language generation functions, such as morphological functions.
+In other words: we will be able to combine the functions from the new wiki, with the data
+and linguistic-information in Wikida ta, in order to generate natural language sentences in
+any supported languages. These sentences can then be used by any Wikipedia (or
+elsewhere).
+2013–2020: Project discussion, research, and proposal
+May 2020: Project approved
+July 2020: Project announced; Development begins on Extension:WikiLambda; Mailing list
+and other channels created and in-depth discussions increase
+September 2020 – December 2020: Wiki of functions naming contest.
+December 2020: Start discussions for the Wikifunctions logo contest and submissions of
+proposals.
+August 2022: Launch Wikifunctions Beta
+July 2023: Launch Wikifunctions in production
+2023/2024: Add more types to Wikifunctions
+2024/2025: Using Wikidata in Wikifunctions
+April 2025: Ability to embed the result of a function call in pages, starting with dagwiki
+late 2025: First live functions for generating simple sentences in natural languages
+2026: soft launch
+Edit
+Contribute to WikifunctionsTimeline
+Participate4/1/26, 3:14 AM Abstract Wikipedia - Meta-Wiki
+https://meta.wikimedia.org/wiki/Abstract_Wikipedia 3/7
+Engineering
+David Santamaria
+(Engineer Manager)
+James Forrester
+(Principal Software
+Engineer; Tech Lead)
+Grace Choi (Senior
+Software Engineer)
+Genoveva Galarza (Staff
+Software Engineer)
+David Martin (Staff
+Software Engineer)
+Cory Massaro (Staff
+Software Engineer)
+Daphne Smit (Senior
+Software Engineer)
+Elena Tonkovidova
+(Senior Test Engineer)
+Vaughn Walters (Test
+Engineer III)
+Updates: UpdatesWork on lexicographic knowledge in Wikidata. This will be needed for Abstract
+Wikipedia to succeed and can be worked on right now.
+Translate the documentation pages (https://meta.wikimedia.org/w/index.php?title=Sp
+ecial:Translate/page-Template:Abstract_Wikipedia&action=page&group=page-Templ
+ate%3AAbstract+Wikipedia&filter=!translated) here on Meta-wiki.
+Translate the software interface on translatewiki.net (completion statistics (https://tran
+slatewiki.net/wiki/Special:MessageGroupStats?group=ext-wikilambda-user&x=D#sor
+table:3=desc))
+Discuss
+Read the weekly updates (subscribe)
+Talk:Abstract Wikipedia
+Dedicated mailing list
+Main chat: Telegram (https://t.me/Wikifunctions) or IRC #wikipedia-abstractconnect
+(https://web.libera.chat/?channel=#wikipedia-abstract) (bridged together) (current logs (http
+s://wm-bot.wmcloud.org/logs/%23wikipedia-abstract/), old logs (https://wm-bot.wmfl
+abs.org/logs/%23wikipedia-abstract/))
+Developer chat: Telegram (https://t.me/abstract_wikipedia_tech) or IRC
+#wikipedia-abstract-techconnect (https://web.libera.chat/?channel=#wikipedia-abstract-tech)
+(bridged together) (logs (https://wm-bot.wmcloud.org/logs/%23wikipedia-abstract-tec
+h/))
+Regular meetings:
+Volunteer's corner: This is a monthly meeting on the first Monday, from 18:30–
+19:00 UTC. It is currently hosted on the Google Meet platform (link (https://meet.g
+oogle.com/xuy-njxh-rkw?authuser=0&hs=122)). It is an informal space for code
+review, talking about what volunteers have achieved or how to approach a task, which task is best to pick up next, and similar.
+Volunteers can come in with questions, show progress, discuss things, tell us about their plans, or ask for ideas. If you need
+someone specific from the development team to join in, please let us know in advance.
+Natural language generation (NLG) on Wikifunctions: This is a monthly meeting on the third Tuesday, from 16:30–17:30 UTC.
+More information.
+Previous office hours: 2021-12-20, 2021-08-14 (Wikimania), 2021-06-22
+Develop
+If you want to help with development:4/1/26, 3:14 AM Abstract Wikipedia - Meta-Wiki
+https://meta.wikimedia.org/wiki/Abstract_Wikipedia 4/7
+A visual explanation of the Abstract
+Wikipedia project and Wikifunctions
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  (https://meta.wikimedia.org/w/index.php?title=Special:Translate/page-Template:Abstract_Wikipedia&language=en&a
+ction=page)You can see information about the Extension at Extension:WikiLambda and some
+developer tips at Abstract developer cheatsheet
+Phabricator:tag/abstract wikipedia – Add feature requests and bug reports here (https://p
+habricator.wikimedia.org/maniphest/task/edit/form/1/?projects=abstract_wikipedia).
+(See Phabricator for details on how to use it)
+You can see a list of smaller development tasks (https://phabricator.wikimedia.org/m
+aniphest/query/_kVbtV8W6la8/#R) – These are good first tasks for newer developers.
+You can see these other good listings for open tasks: #fix-it tasks (https://phabricator.
+wikimedia.org/maniphest/query/Uk54WaT8NuHt/#R) – unassigned tasks (https://p
+habricator.wikimedia.org/maniphest/query/0x_Ngab7CzW0/#R) – nice-to-have tasks (https://phabricator.wikimedia.org/mani
+phest/query/o52TbRctpGjZ/#R)
+You can email Sannita or write on the talk page if you'd like to work with us more closely.
+Try it out
+Wikifunctions is now available live at wikifunctions.org
+on the Beta Cluster Instance (https://wikifunctions.beta.wmflabs.org/wiki/Wikifunctions:Main_Page)
+Volunteer as a design-interview tester.
+You can see some early mockups for a rough idea of how the user interface might work.
+An early prototype implementation is available on Github (https://github.com/google/abstracttext). This may no longer be working
+with the latest MediaWiki releases.
+The easiest way to dive into the prototype is by reading the walkthrough (https://github.com/google/abstracttext/blob/master/eney
+j/docs/walkthrough.md).
+Alternative implementation in GraalVM (https://github.com/lucaswerkmeister/graaleneyj).
+Foundation requests for work internally
+You can refer to this guide (https://office.wikimedia.org/wiki/Abstract%20Wikipedia/Request%20work%20internally) that describes
+step by step how to request work internally.
+4/1/26, 3:14 AM Abstract Wikipedia - Meta-Wiki
+https://meta.wikimedia.org/wiki/Abstract_Wikipedia 5/7

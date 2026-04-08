@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patent Reference | TRANSMISSION</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0e14;--surface:#111820;--border:#1e2a38;--gold:#c8a84e;--teal:#2a9d8f;--text:#e8e4dd;--muted:#8a9aad;--mono:'SF Mono','Fira Code','Consolas',monospace;--font:'Georgia',serif}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;padding:40px 24px;max-width:800px;margin:0 auto}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--teal)}
+h1{font-size:1.8rem;font-weight:400;margin-bottom:8px}
+.sub{color:var(--muted);font-size:.9rem;margin-bottom:40px}
+.back{font-family:var(--mono);font-size:.8rem;margin-bottom:32px;display:block}
+.section{background:var(--surface);border:1px solid var(--border);padding:24px;margin-bottom:16px;border-radius:4px}
+.section h2{font-size:1rem;font-family:var(--mono);color:var(--teal);letter-spacing:.1em;margin-bottom:12px;font-weight:400}
+.section p{font-size:.9rem;color:var(--muted);margin-bottom:8px}
+.section code{font-family:var(--mono);color:var(--gold);font-size:.85rem}
+.file-list{list-style:none;margin-top:12px}
+.file-list li{padding:8px 0;border-top:1px solid var(--border);font-family:var(--mono);font-size:.85rem}
+.file-list li a{color:var(--text)}
+.file-list li span{color:var(--muted);font-size:.75rem;display:block;margin-top:2px}
+footer{text-align:center;padding:40px 0;font-size:.8rem;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<a href="../" class="back">← TRANSMISSION</a>
+
+<h1>Patent Filing Reference</h1>
+<div class="sub">Provisional Patent Application under 35 U.S.C. § 111(b) — Filed April 6, 2026</div>
+
+<div class="section">
+<h2>INVENTION</h2>
+<p>System and Method for Detecting, Quantifying, and Classifying Structural Constraint in Empirical Distributions Using a Ratio-Based Convergence Framework</p>
+<p>Inventor: Jair Valley &middot; Assignee: Heyer Livin LLC</p>
+</div>
+
+<div class="section">
+<h2>LOCKED CONSTANTS</h2>
+<p><code>LOWER_THRESHOLD = 0.30</code></p>
+<p><code>UPPER_THRESHOLD = 0.50</code></p>
+<p><code>REFERENCE_POINT = 0.39</code></p>
+<p><code>SCHEMA_VERSION  = "v1"</code></p>
+</div>
+
+<div class="section">
+<h2>REPRODUCIBILITY CHAIN</h2>
+<p>mapping_rule_version → threshold_set_version → source_id → record_version → schema_version</p>
+<p>Any third party with these five identifiers can replay the computation and verify the result.</p>
+</div>
+
+<div class="section">
+<h2>CODE EMBODIMENT</h2>
+<ul class="file-list">
+<li><a href="../glyph_constraint.py">glyph_constraint.py</a><span>Reference implementation — ratio engine, partition constructor, zone classifier, event-record generator, schema validator, replay hash</span></li>
+<li><a href="../event_schema_v1.json">event_schema_v1.json</a><span>Schema definition — 21 required fields, convergence band 0.30–0.50</span></li>
+<li><a href="../PATENT_REFERENCE.md">PATENT_REFERENCE.md</a><span>Filing provenance and post-filing freeze policy</span></li>
+</ul>
+</div>
+
+<div class="section">
+<h2>FORMULA</h2>
+<p style="font-family:var(--mono);font-size:1.1rem;color:var(--gold);text-align:center;padding:16px 0">R = x / (x + y²)</p>
+<p>x = first partition (constrained). y = second partition (dominant). MECE within defined scope. Dimensionless, bounded [0, 1].</p>
+</div>
+
+<footer>
+<p>Heyer Livin LLC &middot; Patent Pending &middot; All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

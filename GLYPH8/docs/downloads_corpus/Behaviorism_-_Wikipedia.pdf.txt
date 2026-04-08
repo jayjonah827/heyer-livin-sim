@@ -1,0 +1,284 @@
+Behaviorism
+Behaviorism  is a systematic approach to understanding the behavior of humans and other animals.[1][2] It assumes that
+behavior is either a reflex  elicited by the pairing of certain antecedent stimuli  in the environment, or a consequence of that
+individual's history, including especially reinforcement  and punishment  contingencies , together with the individual's current
+motivational state  and controlling stimuli . Although behaviorists generally accept the important role of heredity  in determining
+behavior, deriving from Skinner's two levels of selection (phylogeny and ontogeny),[3] they focus primarily on environmental
+events. The cognitive revolution  of the late 20th century largely replaced behaviorism as an explanatory theory with cognitive
+psychology , which unlike behaviorism views internal mental states as explanations for observable behavior.
+Behaviorism emerged in the early 1900s as a reaction to depth psychology  and other traditional forms of psychology, which often
+had difficulty making predictions that could be tested experimentally. It was derived from earlier research in the late nineteenth
+century, such as when Edward Thorndike  pioneered the law of effect , a procedure that involved the use of consequences to
+strengthen or weaken behavior.
+With a 1924 publication, John B. Watson  devised methodological behaviorism, which rejected introspective methods  and sought
+to understand behavior by only measuring observable behaviors and events. It was not until 1945 that B. F. Skinner  proposed that
+covert behavior—including cognition  and emotions —are subject to the same controlling  variables as observable behavior,[4] which
+became the basis for his philosop hy called radical  behaviorism .[5][6] While Watson and Ivan Pavlov  investigated how
+(conditioned) neutral stimuli elicit reflexes in respondent conditioning , Skinner assessed the reinforcement histories of the
+discriminative (antecedent) stimuli that emit behavior; the process became known as operant conditioning .
+The application of radical behaviorism—known as applied behavior analysis —is used in a variety of contexts, including applied
+animal behavior and organizational behavior management , to the treatment of mental disorders, such as autism  and substance
+abuse .[7][8] In addition, while behaviorism and cognitive  schools of psychological thought do not agree theoretically, they have
+complemented each other in the cognitive-behavioral therapies , which have demonstrated utility in treating certain pathologies,
+including simple phobias , PTSD , and mood disorders .
+The titles given to the various branches of behaviorism include:
+Behavioral genetics: Proposed in 1869 by Francis Galton, a relative of Charles Darwin. Galton believed that inherited factors had a
+significant impact on individuals' behaviors, however did not believe nurturing was not important.
+Interbehaviorism: Proposed by Jacob Robert Kantor before B. F. Skinner's writings.
+Methodological behaviorism: John B. Watson's behaviorism states that only public events (motor behaviors of an individual) can be
+objectively observed. Although it was still acknowledged that thoughts and feelings exist, they were not considered part of the
+science of behavior.[5][9][10] It also laid the theoretical foundation for the early approach behavior modification in the 1970s and
+1980s. Often compared to the views of B.F Skinner (radical behaviorism). Methodological behaviorism "representing the logical
+positivist-derived philosophy of science" which is common in science today, radical focuses on the "pragmatist perspective."
+JSTOR 27759016 (https://www.jstor.org/stable/27759016)
+Psychological behaviorism: As proposed by Arthur W. Staats, unlike the previous behaviorisms of Skinner, Hull, and Tolman, was
+based upon a program of human research involving various types of human behavior. Psychological behaviorism introduces new
+principles of human learning. Humans learn not only by animal learning principles but also by special human learning principles.
+Those principles involve humans' uniquely huge learning ability. Humans learn repertoires that enable them to learn other things.
+Human learning is thus cumulative. No other animal demonstrates that ability, making the human species unique.[11]
+Radical behaviorism: Skinner's philosophy is an extension of Watson's form of behaviorism by theorizing that processes within the
+organism—particularly, private events, such as thoughts and feelings—are also part of the science of behavior, and suggests that
+environmental variables control these internal events just as they control observable behaviors. Behavioral events may be observable
+but not all are, some are considered "private": they are accessible and noticed by only the person who is behaving. B.F. Skinner
+described behavior as the name for the part of the functioning of the organism that consists of its interacting or having commerce
+with its surrounding environment. In simple terms, how an individual interacts with its surrounding environment.[RB] (https://doi.
+org/10.1007/BF03395771) Although private events cannot be directly seen by others, they are later determined through the species'
+overt behavior. Radical behaviorism forms the core philosophy behind behavior analysis. Willard Van Orman Quine used many of
+radical behaviorism's ideas in his study of knowledge and language.[9]
+Teleological behaviorism: Proposed by Howard Rachlin, post-Skinnerian, purposive, close to microeconomics. Focuses on objective
+observation as opposed to cognitive processes.
+Theoretical behaviorism: Proposed by J. E. R. Staddon,[12][13][14] adds a concept of internal state to allow for the effects of context.
+According to theoretical behaviorism, a state is a set of equivalent histories, i.e., past histories in which members of the same
+stimulus class produce members of the same response class (i.e., B. F. Skinner's concept of the operant). Conditioned stimuli are
+thus seen to control neither stimulus nor response but state. Theoretical behaviorism is a logical extension of Skinner's class-based
+(generic) definition of the operant.
+Two subtypes of theoretical behaviorism are:
+Hullian and post-Hullian: theoretical, group data, not dynamic, physiological
+Purposive: Tolman's behavioristic anticipation of cognitive psychologyBranches
+B. F. Skinner proposed radical behaviorism as the conceptual underpinning of the experimental analysis of behavior . This
+viewpoint differs from other approaches to behavioral research in various ways, but, most notably here, it contrasts with
+methodological behaviorism in accepting feelings, states of mind and introspection as behaviors also subject to scientific
+investigation. Like methodological behaviorism, it rejects the reflex as a model of all behavior, and it defends the science of
+behavior as complementary to but independent of physiology. Radical behaviorism overlaps considerably with other western
+philosophical positions, such as American pragmatism .[15]
+Although John B. Watson mainly emphasized his position of methodological behaviorism throughout his career, Watson and
+Rosalie Rayner conducted the infamous Little Albert experiment  (1920), a study in which Ivan Pavlov 's theory  to respondent
+conditioning was first applied to eliciting a fearful reflex of crying in a human infant, and this became the launching point for
+understanding covert behavior (or private events) in radical  behaviorism;[16] however, Skinner felt that aversive stimuli should
+only be experimented on with animals and spoke out against Watson for testing something so controversial on a human.
+In 1959, Skinner observed the emotions of two pigeons by noting that they appeared angry because their feathers ruffled. The
+pigeons were placed together in an operant chamber, where they were aggressive as a consequence of previous reinforcement  in
+the environment. Through stimulus control  and subsequent discrimination training, whenever Skinner turned off the green light,
+the pigeons came to notice that the food reinforcer is discontinued  following each peck and responde d without aggression.
+Skinner concluded that humans also learn aggression and possess such emotions (as well as other private events) no differently
+than do nonhuman animals.
+As experimental behavioral psychol ogy is related to behavioral neuroscience , we can date the first researches in the area were
+done in the beginning of 19th century.[17] Later, this essentially philosophical position gained strength from the success of
+Skinner's early experimental work with rats and pigeons, summarized in his books The Behavior of Organisms  and Schedules of
+Reinforcement.[18][19] Of particular importance was his concept of the operant response, of which the canonical example was the
+rat's lever-press. In contrast with the idea of a physiological or reflex response, an operant is a class of structurally distinct but
+functionally equivalent responses. For example, while a rat might press a lever with its left paw or its right paw or its tail, all of
+these responses operate on the world  in the same way and have a common consequence. Operants are often thought of as species
+of responses, where the individuals differ but the class coheres in its function-shared consequences with operants and
+reproductive success with species. This is a clear distinction between Skinner's theory and S–R theory .
+Skinner's empirical work expanded on earlier research on trial-and-error  learning by researchers such as Thorndike and Guthrie
+with both conceptual reformulations—Thorndike's notion of a stimulus-response "association" or "connection" was abandoned;
+and methodological ones—the use of the "free operant", so-called because the animal was now permitted to respond at its own
+rate rather than in a series of trials determined by the experimenter procedures. With this method, Skinner carried out substantial
+experimental work on the effects of different schedules and rates of reinforcement on the rates of operant responses made by rats
+and pigeons. He achieved remarkable success in training animals to perform unexpected responses, to emit large numbers of
+responses, and to demonstrate many empirical regularities at the purely behavioral level. This lent some credibility to his
+conceptual analysis. It is largely his conceptual analysis that made his work much more rigorous than his peers, a point which can
+be seen clearly in his seminal work Are Theories of Learning Necessary?  in which he criticizes what he viewed to be theoretical
+weaknesses then common in the study of psychology. An important descendant of the experimental analysis of behavior is the
+Society for Quantitative Analysis of Behavior .[20][21]
+As Skinner turned from experimental work to concentrate on the philosophical underpinnings of a science of behavior, his
+attention turned to human language with his 1957 book Verbal Behavior[22] and other language-related publications;[23] Verbal
+Behavior  laid out a vocabulary and theory for functional analysis of verbal behavior, and was strongly criticized in a review by
+Noam Chomsky .[24][25]
+Skinner did not respond in detail but claimed that Chomsky failed to understand his ideas,[26] and the disagreements between the
+two and the theories involved have been further discussed.[27][28][29][30][31][32] Innateness theory , which has been heavily
+critiqued,[33][34] is opposed to behaviorist theory which claims that language is a set of habits that can be acquired by means of
+conditioning.[35][36][37] According to some, the behaviorist account is a process which would be too slow to explain a phenomenon
+as complicated as language learning. What was important for a behaviorist's analysis of human behavior was not language
+acquisition  so much as the interaction between language and overt behavior. In an essay republished in his 1969 book
+Contingencies of Reinforcement ,[23] Skinner took the view that humans could construct linguistic stimuli that would then acquire
+control over their behavior in the same way that external stimuli could. The possibility of such "instructional control" over
+behavior meant that contingencies of reinforcement would not always produce the same effects on human behavior as they
+reliably do in other animals. The focus of a radical behaviorist analysis of human behavior therefore shifted to an attempt to
+understand the interaction betwee n instructional control and contingency control, and also to understand the behavioral
+processes that determine what instructions are constructed and what control they acquire over behavior. Recently, a new line of
+behavioral research on language was started under the name of relational frame theory .[38][39][40][41]Modern-day theory: radical behaviorism
+Experimental and conceptual innovations
+Relation to language
+B. F. Skinner's book Verbal Behavior  (1957) does not quite emphasize on language development, but to understand human
+behavior. Additionally, his work serves in understanding social interactions in the child's early developmental stages focusing on
+the topic of caregiver-infant interaction.[42] Skinner's functional analysis of verbal behavior terminology and theories is
+commonly used to understand the relationship between language development but was primarily designed to describe behaviors
+of interest and explain the cause of those behaviors.[42] Noam Chomsky , an American linguistic professor, has criticized and
+questioned Skinner's theories about the possible suggestion of parental tutoring in language development. However, there is a
+lack of supporting evidence where Skinner makes the statement.[42] Understanding language is a complex topic but can be
+understood through the use of two theories: innateness and acquisition. Both theories offer a different perspective whether
+language is inherently "acquired" or "learned".[43]
+Operant conditioning  was developed by B.F. Skinner  in 1938 and is form of learning in which the frequency of a behavior is
+controlled by consequences to change behavior.[44][18][45][46] In other words, behavior is controlled by historical consequential
+contingencies, particularly reinforcement —a stimulus that increases the proba bility of performing behaviors, and punishment —a
+stimulus that decreases such probability.[44] The core tools of consequences are either positive (presenting stimuli following a
+response), or negative (withdrawn stimuli following a response).[47]
+The following descriptions explains the concepts of four common types of consequences in operant conditioning:[48]
+Positive reinforcement: Providing a stimulus that an individual enjoys, seeks, or craves, in order to reinforce desired behaviors.[49]
+For example, when a person is teaching a dog to sit, they pair the command "sit" with a treat. The treat is the positive reinforcement
+to the behavior of sitting. The key to making positive reinforcement effect is to reward the behavior immediately.
+Negative reinforcement: Increases the frequency of a behavior, but the behavior results from removing unpleasant or unwanted
+stimulus.[44] For example, a child hates being nagged (negative) to clean his room (behavior) which increases the frequency of the
+child cleaning his room to prevent his mother from nagging. Another example would be putting on sunscreen (behavior) before
+going outside to prevent sunburn (negative).
+Positive punishment: Providing a stimulus that an individual does not desire to decrease undesired behaviors. For example, if a child
+engages in an undesired behavior, then parents may spank (stimulus) the child to correct their behavior.
+Negative punishment: Removing a stimulus that an individual desires in order to decrease undesired behaviors. An example of this
+would be grounding a child for failing a test. Grounding in this example is taking away the child's ability to play video games. As
+long as it is clear that the ability to play video games was taken away because they failed a test, this is negative punishment. The key
+here is the connection to the behavior and the result of the behavior.[50]
+A classical experiment in operant conditioning, for example, is the Skinner Box, "puzzle box" or operant conditioning chamber  to
+test the effects of operant conditioning principles on rats, cats and other species. From this experiment, he discovered that the rats
+learned very effectively if they were rewarded frequently with food. Skinn er also found that he could shape  (create new behavior)
+the rats' behavior through the use of rewards, which could, in turn, be applied to human learning as well.
+Skinner's model was based on the premise that reinforcement is used for the desired actions or responses while punishment was
+used to stop the responses of the undesired actions that are not. This theory proved that humans or animals will repeat any action
+that leads to a positive outcome, and avoid any action that leads to a negative outcome. The experiment with the pigeons showed
+that a positive outcome leads to learned behavior since the pigeon learned to peck the disc in return for the reward of food.
+These historical consequential contingencies subsequently lead to (ante cedent) stimulus control , but in contrast to respondent
+conditioning where antecedent stimuli elicit reflexive behavior, operant behavior is only emitted and therefore does not force its
+occurrence. It includes the following controlling stimuli:[48]
+Discriminative stimulus (Sd): An antecedent stimulus that increases the chance of the organism engaging in a behavior. One
+example of this occurred in Skinner's laboratory. Whenever the green light (Sd) appeared, it signaled the pigeon to perform the
+behavior of pecking because it learned in the past that each time it pecked, food was presented (the positive reinforcing stimulus).
+Stimulus delta (S-delta): An antecedent stimulus that signals the organism not to perform a behavior since it was extinguished or
+punished in the past. One notable instance of this occurs when a person stops their car immediately after the traffic light turns red
+(S-delta). However, the person could decide to drive through the red light, but subsequently receive a speeding ticket (the positive
+punishing stimulus), so this behavior will potentially not reoccur following the presence of the S-delta.
+Although operant conditioning  plays the largest role in discussions of behavioral mechanisms, respondent conditioning  (also
+called Pavlovian or classical conditioning) is also an important behavior-analytic process that needs not refer to mental or other
+internal processes. Pavlov's experiments with dogs provide the most familiar example of the classical conditioning procedure. In
+the beginning, the dog was provided meat (unconditioned stimulus, UCS , naturally elicit a response that is not controlled) to eat,
+resulting in increased salivation (unconditioned response, UCR, which means that a response is naturally caused by UCS).
+Afterward, a bell ring was presented  together with food to the dog. Although bell ring was a neutral stimulus (NS, meaning that
+the stimulus did not have any effect), dog would start to salivate when only hearing a bell ring after a number of pairings.
+Eventually, the neutral stimulus (bell ring) became conditioned. Therefore, salivation was elicited as a conditioned response (the
+response same as the unconditioned response), pairing up with meat—the conditioned stimulus)[51] Although Pavlov proposedEducation
+Operant conditioning
+Respondent conditioning
+some tentative physiological processes that might be involved in classical conditioning, these have not been confirmed.[52] The
+idea of classical conditioning helped behaviorist John Watson discover the key mechanism behind how humans acquire the
+behaviors that they do, which was to find a natural reflex that produces the response being considered.
+Watson 's "Behaviorist Manifesto" has three aspects that deserve special recognition: one is that psychology should be purely
+objective, with any interpretation of conscious experience being removed, thus leading to psychology as the "science of behavior";
+the second one is that the goals of psychology should be to predict and control behavior (as opposed to describe and explain
+conscious mental states); the third one is that there is no notable distinction between human and non-human behavior. Following
+Darwin's theory of evolution, this would simply mean that human behavior is just a more complex version in respect to behavior
+displayed by other species.[53]
+Behaviorism is a psychological movement that can be contrasted with philosophy of mind .[54][55][56] The basic premise of
+behaviorism is that the study of behavior should be a natural science , such as chemistry  or physics .[57][58] Initially behaviorism
+rejected any reference to hypothetical inner states of organisms as causes for their behavior, but B.F. Skinner's radical
+behaviorism reintroduced reference to inner states and also advocated for the study of thoughts and feelings as behaviors subject
+to the same mechanisms as external behavior.[57][58] Behaviorism takes a functional view of behavior. According to Edmund
+Fantino  and colleagues: "Behavior analysis has much to offer the study of phenomena normally dominated by cognitive and social
+psychologists. We hope that successful application of behavioral theory and methodology will not only shed light on central
+problems in judgment and choice but will also generate greater appreciation of the behavioral approach."[59]
+Behaviorist sentiments are not uncommon within philosophy of language  and analytic philosophy . It is sometimes argued that
+Ludwig Wittgenstein  defended a logical behaviorist  position[10] (e.g., the beetle in a box argument). In logical positivism  (as held,
+e.g., by Rudolf Carnap[10] and Carl Hempel ),[10] the meaning of psychological statements are their verification conditions, which
+consist of performed overt behavior. W. V. O. Quine  made use of a type of behaviorism,[10] influenced by some of Skinner's ideas,
+in his own work on language. Quine's work in semantics differed substa ntially from the empiricist semantics of Carnap which he
+attempted to create an alternative to, couching his semantic theory in references to physical objects rather than sensations.
+Gilbert Ryle  defended a distinct strain of philosophical behaviorism, sketched in his book The Concept of Mind .[10] Ryle's central
+claim was that instances of dualism frequently represented "category mistakes ", and hence that they were really
+misunderstandings of the use of ordinary language. Daniel Dennett  likewise acknowledges himself to be a type of behaviorist,[60]
+though he offers extensive criticism of radical behaviorism and refutes Skinner's rejection of the value of intentional idioms and
+the possibility of free will.[61]
+This is Dennett's main point in "Skinner Skinned". Dennett argues that there is a crucial difference between explaining
+and explaining away... If our explana tion of apparently rational behavior turns out to be extremely simple, we may want
+to say that the behavior was not really rational after all. But if the explanation is very complex and intricate, we may want
+to say not that the behavior is not rational, but that we now have a better understanding of what rationality consists in.
+(Compare: if we find out how a computer program solves problems in linear algebra, we don't say it's not really solving
+them, we just say we know how it does it. On the other hand, in cases like Weizenbaum's  ELIZA  program, the
+explanation of how the computer carries on a conversation is so simple that the right thing to say seems to be that the
+machine isn't really carrying on a conversation, it's just a trick.)
+— Curtis Brown, "Behaviorism: Skinner and Dennett", Philosophy of Mind[62]
+Law of effect: Although Edward Thorndike's methodology mainly dealt with reinforcing observable behavior, it viewed cognitive
+antecedents as the causes of behavior,[63] and was theoretically much more similar to the cognitive-behavior therapies than classical
+(methodological) or modern-day (radical) behaviorism. Nevertheless, Skinner's operant conditioning was heavily influenced by the
+Law of Effect's principle of reinforcement.[63]
+Trace conditioning: Akin to B.F. Skinner's radical behaviorism, it is a respondent conditioning technique based on Ivan Pavlov's
+concept of a "memory trace" in which the observer recalls the conditioned stimulus (CS), with the memory or recall being the
+unconditioned response (UR). There is also a time delay between the CS and unconditioned stimulus (US), causing the conditioned
+response (CR)—particularly the reflex—to be faded over time.[63] According to Marchand,[64] the hippocampus is a part of the
+cognitive processes during trace conditioning and other forms of classical conditioning in two ways: needing to overcome stimuli or
+due to mre activity from complex challenges. However, results may vary due to the nature of the task and the design of the
+experiment .
+Skinner's view of behavior is most often characterized as a "molecular" view of behavior; that is, behavior can be decomposed into
+atomistic parts or molecules. This view is inconsistent with Skinner's complete description of behavior as delineated in other
+works, including his 1981 article "Selection by Consequences".[65] Skinner proposed that a complete account of behavior requires
+understanding of selection history at three levels: biology  (the natural selection  or phylogeny  of the animal); behavior (the
+reinforcement history or ontogeny of the behavioral repertoire of the animal); and for some species, culture  (the cultural practices
+of the social group to which the anim al belongs). This whole organism then interacts with its environment. Molecular behaviorists
+use notions from melioration theory , negative power function discounting  or additive versions of negative power functionIn philosophy
+Law of effect and trace conditioning
+Molecular versus molar behaviorism
+discounting.[66] According to Moore,[67] the perseverance in a molecular examination of behavior may be sign of a desire for an
+in-depth understanding, maybe to identify any underlying mechanism or components that contribute to comples actions. This
+strategy might involve elements, procedure, or variables that contribute to behaviorism.
+Molar behaviorists, such as Howard Rachlin , Richard Herrnstein , and William Baum, argue that behavior cannot be understood
+by focusing on events in the moment. That is, they argue that behavior is best understood as the ultimate product of an organism's
+history and that molecular behaviorists are committing a fallacy by inventing fictitious proximal causes for behavior. Molar
+behaviorists argue that standard molecular constructs, such as "associative strength", are better replaced by molar variables such
+as rate of reinforcement .[68] Thus, a molar behaviorist would describe "loving someone" as a pattern of loving behavior  over time;
+there is no isolated, proximal cause of loving behavior, only a history of behaviors (of which the current behavior might be an
+example) that can be summarized as "love".
+Skinner's radical behaviorism has been highly successful experimentally, revealing new phenomena with new methods, but
+Skinner's dismissal of theory limited its development. Theoretical behaviorism[12] recognized that a historical system, an
+organism, has a state as well as sensitivity to stimuli and the ability to emit responses. Indeed, Skinner himself acknowledged the
+possibility of what he called "latent" responses in humans, even though he neglected to extend this idea to rats and pigeons.[69]
+Latent responses constitute a repertoire, from which operant reinforcement can select. Theoretical behaviorism links between the
+brain and the behavior that provid es a real understanding of the behavior, rather than a mental presumption of how brain-
+behavior relates.[70] The theoretical concept of behaviorism are blended with knowledge of mental structure such as memory and
+expectancies associated with inflex ible behaviorist stances that have traditionally forbidden the examination of the mental
+state.[71] Because of its flexibility, theoretical behaviorism permits the cognitive process to have an impact on behavior.
+From its inception, behavior analysis has centered its examination on cultural occurrences (Skinner , 1953,[72] 1961,[73] 1971,[74]
+1974[75]). Nevertheless, the methods used to tackle these occurrences have evolved. Initially, culture was perceived as a factor
+influencing behavior, later becomin g a subject of study in itself.[76] This shift prompted research into group practices and the
+potential for significant behavior al transformations on a larger scale. Following Glenn's (1986) influential work,
+"Metacontingencies in Walden Two ",[77]  numerous research endeavors exploring behavior analysis in cultural contexts have
+centered around the concept of the metacontingency. Glenn (2003) posited that understanding the origins and development of
+cultures necessitates delving beyond evolutionary and behavioral principles governing species characteristics and individual
+learned behaviors requires analysis at a major level.[78]
+With the fast growth of big behavioral data and applications, behavior analysis is ubiquitous. Understanding behavior from the
+informatics and computing perspect ive becomes increasingly critical for in-depth understanding of what, why and how behaviors
+are formed, interact, evolve, change and affect business and decision. Behavior informatics  and behavior computing  deeply
+explore behavior intelligence and behavior insights from the informatics and computing perspectives.
+Pavel et al. (2015) found that in the realm of healthcare  and health psychology , substantial evidence supports the notion that
+personalized health interventions yield greater effectiveness compared to standardized approaches. Additionally, researchers
+found that recent progress in sensor and communication technology, coupled with data analysis and computational modeling,
+holds significant potential in revolutionizing interventions aimed at changing health behavior. Simultaneous advancements in
+sensor and communication technology, alongside the field of data science , have now made it possible to comprehensively measure
+behaviors occurring in real-life settings. These two elements, when combined with advancements in computational modeling,
+have laid the groundwork for the emerging discipline known as behavioral informatics . Behavioral informatics represents  a
+scientific and engineering domain  encompassing behavior tracking,  evaluation, computational modeling, deduction, and
+intervention.[79]
+In the second half of the 20th century, behaviorism was largely eclipsed as a result of the cognitive revolution .[80][81] This shift
+was due to radical behaviorism being  highly criticized for not examining  mental processes, and this led to the development of the
+cognitive therapy  movement. In the mid-20th century, three main influences arose that would inspire and shape cognitive
+psychology as a formal school of thought:
+Noam Chomsky's 1959 critique of behaviorism, and empiricism more generally, initiated what would come to be known as the
+"cognitive revolution".[82]
+Developments in computer science would lead to parallels being drawn between human thought and the computational
+functionality of computers, opening entirely new areas of psychological thought. Allen Newell and Herbert Simon spent years
+developing the concept of artificial intelligence (AI) and later worked with cognitive psychologists regarding the implications of AI.
+The effective result was more of a framework conceptualization of mental functions with their counterparts in computers (memory,
+storage, retrieval, etc.).
+Formal recognition of the field involved the establishment of research institutions such as George Mandler's Center for Human
+Information Processing in 1964. Mandler described the origins of cognitive psychology in a 2002 article in the Journal of the History
+[]Theoretical behaviorism
+Behavior analysis and culture
+Behavior informatics and behavior computing
+Criticisms and limitations

@@ -1,0 +1,206 @@
+Cognitive anthropology
+Cognitive anthropology  is a subfield of anthropology  influenced by Linguistic anthropology , cultural anthropology , and
+biological anthropology  in which scholars seek to explain patterns of shared knowledge, cultural  innovation , and transmission
+over time and space using the methods and theories  of the cognitive sciences  (especially experimental psychology  and cognitive
+psychology ) often through close collaboration with historians, ethnographers , archaeologists, linguists, musicologists , and other
+specialists engaged in the description and interpretation  of cultural forms. Cognitive anthropology is concerned with what people
+from different groups know and how that implicit knowledge, in the sense of what they think subconsciously, changes the way
+people perceive and relate to the world around them.[1]
+Cognitive anthropology arose as part of efforts designed to understand the relationship between language and thought, with
+linguistic anthropologists of North America in the 1950s spearheading the effort to approach cognition in cultural contexts, rather
+than as an effort to identify or assume cognitive universals.[2]
+Cognitive anthropology became a current paradigm of anthropology under the new ethnography or ethnoscience paradigm that
+emerged in American anthropology toward the end of the 1950s.[3]
+Cognitive anthropology studies a range of domains including folk taxonomies, the interaction of language and thought, and
+cultural models.[1]
+From a linguistics stand-point, cognitive anthropology uses language as the doorway to study cognition.[4] Its general goal is to
+break language down to find commonalities in different cultures and the ways people perceive the world.[5] Linguistic study of
+cognitive anthropology may be broken down into three subfields: semantics , syntactics , and pragmatics .
+Cognitive anthropology is separated in two categories, thought in society/culture and language. Thought is concerned with the
+procedure and outcome of thoughts. The thinking process in cognitive anthropology puts the importance of culture at the center
+of examining thoughts.[6] Cognitive anthropologists believe that cultural meanings arise when people learn, create, interpret and
+apply these collective representations.[6] Reapplication and representations reinforce the experienced patterns through the
+process of implementing appropriateness and relevance, contain the elements for cognitive reorganization and creativity in
+behavior and understanding.[7]
+In cognitive anthropology language  is seen as an important source for analyzing thinking processes. Cognitive anthropology
+analyzes cultural views with lexicons as the primary source of data that researches search for definite beliefs, implicit
+understandings and category systems.[6]
+Cognitive anthropology uses quantit ative measures as well as the traditional ethnographic methods of cultural anthropology in
+order to study culture.[8] Because of the field's interest in determining shared knowledge, consensus analysis  has been used as its
+most widely used statistical measure.[1][9]
+One of the techniques used is Cultural Network Analysis , the drawing of networks of interrelated ideas that are widely shared
+among members of a population.[10] Recently there has been some interchange between cognitive anthropologists and those
+working in artificial intelligence.[11]
+Cultural consonance  - the concept refers to the degree to which people’s activities match their beliefs about how they should
+be.[12]
+Cultural models  are the unconscious set of assumptions and understandings members of a society or group share. They
+significantly affect people’s understanding of the world and of human behavior.[13]
+Domain  is the organized set of words, concepts, or sentences, all on the same level of contrast that jointly refers to a single
+conceptual sphere.[14]
+Psychic unity of mankind  is the Bastian’s idea that all humans must have the same basic psychic or mental processes, and that
+this unity produces similar responses to similar stimuli.[15]
+Prototypes  are conventional reference points in making judgments of the similarities and differences in other experiences and
+things in the world.[16]History
+Scope
+Methods
+Key concepts
+Schemata  is a culturally specific mental structure responsible for an active organization of past experiences, implying activation
+of the whole. Remembering is guided by this mental structure.[17][18]
+Shared knowledge  is publicly shared meanings about the world, which implies not merely knowing something but also
+knowing something to be widely known by the other group members.[19] Cultural knowledge is shared, but too large to be held by
+a single individual, and thus unevenly distributed. The concept was developed by A. Kimball Romney, William Batchelder, and
+Susan Weller in the 1980s.
+Cognitive anthropology intersects with several other fields within its parent cultural anthropology sphere. Whereas cultural
+anthropologists had always sought to identify and organize certain salient facets of culture, cognitive anthropologists appreciate
+the reflexive nature of their study.[20] Instead of analyzing facets of culture as they appear to the anthropologist, they place special
+emphasis on emic  viewpoints of culture to underst and what motivates different populations, eventually coming to an
+understanding of universal cognition.[21][20] These goals form the basis of the argument merging cognitive anthropology and
+cognitive science .
+Cognitive anthropology is linked to psychology because studying the way social groups reason and categorize raises questions
+about the basic nature of cognitive processes.[1] Concepts of cognitive anthropology (e.g., Cultural consonance, Cultural models,
+Knowledge structures, Shared knowledge etc., see below) rely heavily on unconscious interactions within a group that manifest
+themselves from the very beginning of life in unconscious interactions in interpersonal dynamics. [22][23][24] In cognitive sciences,
+mechanisms of unaware knowledge assimilation in young children are described by the notion of shared intentionality .[25]
+Growing evidence in Neuroscience research supports these arguments by revealing the effects of neuroplasticity on the brain´s
+development, which are mediated by both environmental and historically dependent mechanisms that shape the nervous
+system.[26][27]
+Advocate and presidential researcher Giovanni Bennardo put forth three categories of data in 2013 that warrant this grouping.[28]
+Cognitive anthropologists gather ethnographic, linguistic, and experimental data, which is then analyzed quantitatively.[28] For
+example, medical rituals provide more direct data that informs linguistic analysis and a greater insight into cognitive motivations,
+hence the field’s similarity to linguistic relativism .[29] To advocates, the mind is a cultura l facet (as is kinship to the pioneeri ng
+cultural anthropologist) that generates language, which provides insight into human cognition.[28]
+Other advocates for cognitive anthropology’s categorization with cognitive science have pointed out that cognitive psychology  fails
+to encompass several fields that cognitive anthropology does, hence its pivotal role in cognitive science. Professor of Psychology at
+University of Connecticut , James S. Boster, points out in the Journal of the Cognitive Science Society  that while cognitive
+psychology studies a human’s thought process, cognitive anthropology studies what exactly different humans ponder—what they
+sense and perceive of their own culture and surroundings in different settings.[29]
+There has been longtime conflict between cognitive scientists and cognitive anthropologists on the intersection of their respective
+fields. The grouping has received much backlash in the literature, such as from Edward Evans-Pritchard[30] on the basis of
+methodology and subject matter.[21]
+Cognitive psychologists have criticized cognitive anthropologists for their chaotic research methods, such as forming instruments
+of observation and data acquisition using language that natives use in their interviews with fieldworkers.[29] "CA has been
+alienated from the rest of cultural anthropology because it is seen as too quantitative and scientific for the prevailing post-modern
+aesthetic, while at the same time seen as too ethnographic and natural historical for the tastes of CP."[29]
+Some cognitive scientists have devalued anthropology's influence in the cognitive sciences, which was extensively discussed by
+Sieghard Beller, Andrea Bender, and Douglas Medin in the Journal of the Cognitive Science Society. In their widely cited journal
+article, they attribute this rejection to cognitive anthropology's lack of credibility as a subset of the psychological sciences, focus on
+common narratives throughout different cultures rather than on the individual mind, and difficulty of getting published.[21] "They
+strive for insights that explain something about the human mind in gene ral and therefore consider cross-cultural comparisons as
+just one means to test assumptions on universals."[21]
+Critics have also disputed the scientific nature of cognitive anthropology in general and argued that it studies content of thought
+rather than process, which cognitive science centers on.[21][29] Resistance from more established subfields of cultural
+anthropology has historically restricted resources and tenure for cognitive anthropologists.[29]
+Cognitive model § Mother-fetus cognitive model
+Componential analysis
+A. Kimball Romney
+Maurice BlochRelation with cognitive science
+Advocacy
+Criticism
+See also
+1. D'Andrade (1995), p. ?.
+2. Brown (2006), p. 96–97.
+3. Levinson (2009), p. ?.
+4. Quinn (2005).
+5. Colby, Fernandez & Kronenfeld (1981).
+6. Strauss (2006), p. 529–532.
+7. BABER, CHRIS (August 1993). "A review of: "Ergonomics,
+health and safety: perspectives for the nineties", by W. T.
+SINGLETON, and J. DIRKX, [Leuven: Leuven University
+Press), 1991, BF1500 (approx. £27.00), ISBN 90-6186-467-4" (ht
+tps://dx.doi.org/10.1080/00140139308967968). Ergonomics. 36
+(8): 985–987. doi:10.1080/00140139308967968 (https://doi.org/
+10.1080%2F00140139308967968). ISSN 0014-0139 (https://sear
+ch.worldcat.org/issn/0014-0139).
+8. Kronenfeld, David (2011). A Companion to Cognitive
+Anthropology (https://www.wiley.com/en-us/A+Companion+
+to+Cognitive+Anthropology-p-9781405187787). Chichester,
+West Sussex, UK: Wiley Blackwell. p. 624. ISBN 978-1-405-
+18778-7.
+9. DeMunck (2009).
+10. Sieck (2010).
+11. Gomm (2009), p. ?.
+12. Dressler, W. W., Balieiro, M. C., Ribeiro, R. P., & Santos, J. E. D.
+(2007). "Cultural consonance and psychological distress:
+Examining the associations in multiple cultural domains."
+Culture, medicine and psychiatry, 31, 195-224.
+13. Shore, B. (1998). Culture in mind: Cognition, culture, and the
+problem of meaning. Oxford University Press.
+14. Weller, S. C., & Romney, A. K. (1988). "Systematic data
+collection (Vol. 10)." Sage publications.
+15. Garbarino, M. S. (1983). Sociocultural theory in anthropology:
+A short history. Waveland Press.
+16. Lakoff, G. (1984). "Classifiers as a reflection of mind: a
+cognitive model approach to prototype theory." Cognitive
+Science Program, Institute of Human Learning, University of
+California at Berkeley.
+17. Schacter, D. L., & Kihlstrom, J. F. (1989). "Functional amnesia."
+Handbook of neuropsychology, 3, 209-231
+18. Kamppinen, M. (1993). "Cognitive schemata." In
+Consciousness, Cognitive Schemata, and Relativism:
+Multidisciplinary Explorations in Cognitive Science (pp. 133-
+168). Dordrecht: Springer Netherlands.19. Maltseva, K. (2020). "Bridging sociology with anthropology
+and cognitive science perspectives to assess shared cultural
+knowledge." Sociology: Theory, Methods, Marketing, (1).
+https://doi.org/10.15407/sociology2020.01.108
+20. Tyler, Stephen A. (1969). Cognitive anthropology : readings.
+New York: Holt, Rinehart and Winston. ISBN 0-03-073255-7.
+OCLC 22714 (https://search.worldcat.org/oclc/22714).
+21. Beller, Bender & Medin (2012), p. ?.
+22. Becchio, C., & Colle, L. (2005). "Shared Intentionality." In
+Proceedings of the Annual Meeting of the Cognitive Science
+Society (Vol. 27, No. 27).
+23. Delafield-Butt, J. T., and Trevarthen, C. (2015). "The
+ontogenesis of narrative: from moving to meaning." Front.
+Psychol. 6:1157. doi: 10.3389/fpsyg.2015.01157
+24. Vincini, S., and Gallagher, S. (2021). "Developmental
+phenomenology: examples from social cognition." Cont. Philos.
+Rev. 54, 183–199. doi: 10.1007/s11007-020-09510-z
+25. Vincini, S. (2023). "Taking the mystery away from shared
+intentionality: The straightforward view and its empirical
+implications." Front. Psychol. 14:1068404. doi:
+10.3389/fpsyg.2023.1068404
+26. Sarto-Jackson, I., Larson, D.O. & Callebaut, W. (2017).
+"Culture, neurobiology, and human behavior: new perspectives
+in anthropology." Biol Philos 32, 729–748.
+https://doi.org/10.1007/s10539-017-9574-2
+27. Chalupa, L.M., Berardi, N., Caleo, M., Galli-Resta, L.,
+Pizzorusso, T. (2011). Cerebral plasticity: new perspectives.
+MIT Press, Cambridge.
+28. Bennardo, Giovanni (08 November 2013). "Cognitive
+Anthropology's Contributions to Cognitive Science: A Cultural
+Human Mind, a Methodological Trajectory, and Ethnography".
+Journal of The Cognitive Science Society. 6: 138–140 – via
+Wiley
+29. Boster, James (18 June 2012). "Cognitive Anthropology Is a
+Cognitive Science". Journal of the Cognitive Science Society. 4:
+372–378 – via Wiley.
+30. Whitehouse, Harvey; Laidlaw, James (2007). Religion,
+anthropology, and cognitive science. Durham, N.C.: Carolina
+Academic Press. ISBN 978-1-59460-107-1. OCLC 167763914 (h
+ttps://search.worldcat.org/oclc/167763914).
+Beller, Sieghard; Bender, Andrea; Medin, Douglas L. (2012), "Should Anthropology Be Part of Cognitive Science?", Journal of the
+Cognitive Science Society, 4 (3): 342–353, doi:10.1111/j.1756-8765.2012.01196.x (https://doi.org/10.1111%2Fj.1756-8765.2012.01196.
+x), PMID 22685087 (https://pubmed.ncbi.nlm.nih.gov/22685087)
+Brown, Penelope (2006), "Cognitive anthropology", in Jourdan, Christine; Tuite, Kevin (eds.), Language, Culture and Society: Key
+topics in Linguistic Anthropology, Cambridge University Press, pp. 96–114
+Colby, Benjamin; Fernandez, James W.; Kronenfeld, David B. (1981). Toward a convergence of cognitive and symbolic anthropology.
+New York: Blackwell Publishing.
+D'Andrade, Roy (1995), The Development of Cognitive Anthropology, Cambridge: Cambridge University Press
+DeMunck, Victor (2009). Research Design and Methods for Studying Cultures. Lanham: AltaMira Press. ISBN 9780759111431.
+OCLC 700282414 (https://search.worldcat.org/oclc/700282414).
+Gomm, Roger (2009). Key concepts in social research methods. Basingstoke: Palgrave MacMillan. ISBN 978-0-230-21499-6.
+Levinson, Stephen C. (2009). "Cognitive Anthropology". In Senft, Gunter; Östman, Jan-Ola; Verschueren, Jef (eds.). Culture and
+Language Use (https://books.google.com/books?id=yKZGPr7yPSoC). John Benjamins Publishing. pp. 50–58. ISBN 978-90-272-0779-
+1.
+Quinn, N. (2005), Finding Culture in Talk: A Collection of Methods, New York: Palgrave Macmillan
+Sieck, W. R. (2010). "Cultural network analysis: Method and application". In D. Schmorrow; D. Nicholson (eds.). Advances in Cross-
+Cultural Decision Making. CRC Press / Taylor & Francis, Ltd.
+Strauss, C. (2006), "Cognitive Anthropology" (https://dx.doi.org/10.1016/b0-08-044854-2/03016-9), Encyclopedia of Language &
+Linguistics, Elsevier, pp. 529–532, doi:10.1016/b0-08-044854-2/03016-9 (https://doi.org/10.1016%2Fb0-08-044854-2%2F03016-9),
+ISBN 978-0-08-044854-1, retrieved 2021-05-10Notes
+References
+Wisner, Alain. "New technologies and old thoughts: relations between ergonomics and cognitive anthropology." Ergonomics, health
+and safety: perspectives for the nineties. Leuven University Press Leuven, 1991. 41-55.
+Regnier, D. & Astuti, R., eds. (2015). Special issue: The cognitive challenge (http://onlinelibrary.wiley.com/doi/10.1111/soca.v23.2/is
+suetoc). Social Anthropology 23, vol. 2.
+Retrieved from "https://en.wikipedia.org/w/index.php?title=Cognitive_anthropology&oldid=1345977293"Further reading

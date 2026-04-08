@@ -1,0 +1,148 @@
+Sign (semiotics)
+In semiotics , a sign  is anything that communicates  a meaning  that is not the sign itself to the interpreter of the sign. The meaning can
+be intentional, as when a word is uttered with a specific meaning, or unintentional, as when a symptom  is taken as a sign of a particular
+medical condition. Signs can communicate through any of the senses , visual, auditory, tactile, olfactory, or taste.
+Two major theories describe the way signs acquire the ability to transfer information. Both theories understand the defining property of
+the sign as a relation between a number of elements. In semiology, the tradition of semiotics developed by Ferdinand de Saussure
+(1857–1913), the sign relation is dyad ic, consisting only of a form of the sign (the signifier) and its meaning (the signified). Saussure saw
+this relation as being essentially arbitrary (the principle of semiotic arbitrariness ), motivated only by social convention . Saussure's
+theory has been particularly influential in the study of linguistic signs. The other major semiotic theory , developed by Charles Sanders
+Peirce  (1839–1914), defines the sign as a triadic relation as "something which stands to somebody for something in some respect or
+capacity.” [1] This means that a sign is a relation between the sign vehicle (the specific  physical form of the sign), a sign object (the aspect
+of the world that the sign carries meaning about) and an interpretant (the meaning of the sign as understood by an interpreter).
+According to Peirce, signs can be divided by the type of relation that hold s the sign relation together as either icons , indices or symbols .
+Icons are those signs that signify by means of similarity  between sign vehicle and sign object (e.g. a portrait or map), indices are those
+that signify by means of a direct relation of contiguity or causality between sign vehicle and sign object (e.g. a symptom), and symbols
+are those that signify through a law or arbitrary social convention.
+According to Ferdinand de Saussure  (1857–1913), a sign is composed of the signifier[2] (signifiant ), and the signified  (signifié ). These
+cannot be conceptualized as separate entities but rather as a mapping from significant differences in sound to potential (correct)
+differential denotation. The Saussurean sign exists only at the level of the synchronic  system, in which signs are defined by their relative
+and hierarchical privileges of co-occurrence. It is thus a common misre ading of Saussure to take signifiers to be anything one could
+speak, and signifieds as things in the world. In fact, the relationship of language to parole  (or speech-in-context) is and always has been
+a theoretical problem for linguistics (cf. Roman Jakobson's famous essay "Closing Statement: Linguistics and Poetics" et al.).Dyadic signs4/1/26, 2:42 AM Sign (semiotics) - Wikipedia
+https://en.wikipedia.org/wiki/Sign_(semiotics) 1/9
+A famous thesis by Saussure states that the relationship between a sign and the real-world thing it denotes is an arbitrary one. There is
+not a natural relationship between a word and the object it refers to, nor is there a causal relationship between the inherent properties of
+the object and the nature of the sign used to denote it. For example, there is nothing about the physical quality of paper that requires
+denotation by the phonological sequence 'paper'. There is, however, what Saussure called 'relative motivation': the possibilities of
+signification of a signifier are constr ained by the compositionality  of elements in the linguistic system (cf. Émile Benveniste 's paper on
+the arbitrariness of the sign in the first volume of his papers on general linguistics). In other words, a word is only available to acquire a
+new meaning if it is identifiably different  from all the other words in the language and it has no existing meanin g. Structuralism  was
+later based on this idea that it is only within a given system that one can define the distinction between the levels of system and use, or
+the semantic "value" of a sign.
+Charles Sanders Peirce  (1839–1914) proposed a different theory. Unlike Saussure who approached the conceptual question from a study
+of linguistics  and phonology , Peirce, considered the father of Pragmaticism , extended the concept of sign to embrace many other forms.
+He considered "word" to be only one particular kind of sign, and characterized sign as any mediational means to understanding . He
+covered not only artificial, linguistic and symbolic signs, but also all semblances (such as kindred sensible qualities), and all indicators
+(such as mechanical reactions). He counted as symbols all terms, propositions and arguments whose interpretation is based upon
+convention or habit, even apart from  their expression in particular langu ages. He held that "all this universe is perfused with signs, if it
+is not composed exclusively of sign s".[3] The setting of Peirce's study of signs is philosophical logic , which he defined as formal
+semiotic,[4] and characterized as a normative field following esthetics and ethics, as more basic than metaphysics,[5] and as the art of
+devising methods of research.[6] He argued that, since all thought takes time, all thought is in signs,[7] that all thought has the form of
+inference (even when not conscious and deliberate),[7] and that, as inference, "logic is rooted in the social principle", since inference
+depends on a standpoint that, in a sense, is unlimited.[8] The result is a theory not of language in particular, but rather of the production
+of meaning, and it rejects the idea of a static relationship between a sign and what it represents: its object . Peirce believed that signs are
+meaningful through recursive relationships that arise in sets of three.
+Even when a sign represents by a resemblance or factual connection independent of interpretation, the sign is a sign only insofar as it is
+at least potentially interpretable by a mind and insofar as the sign is a determination of a mind or at least a quasi-mind , that functions
+as if it were a mind, for example in crystals and the work of bees[9]—the focus here is on sign action in general, not on psychology,
+linguistics, or social studies (fields Peirce also pursued).
+A sign depends on an object in a way that enables (and, in a sense, determines) an interpretation, an interpretant , to depend on the
+object as the sign depends on the object . The interpretant, then, is a further sign of the object, and thus enables and determines still
+further interpretations, further interpretant signs. The process, called semiosis , is irreducibly triadic, Peirce held, and is logicallyTriadic signs4/1/26, 2:42 AM Sign (semiotics) - Wikipedia
+https://en.wikipedia.org/wiki/Sign_(semiotics) 2/9
+structured to perpetuate itself. It is what defines sign, object and interpre tant in general.[10] As Jean-Jacques Nattiez  put it, "the process
+of referring effected by the sign is infinite ." (Peirce used the word "determine"  in the sense not of strict determinism, but of effectiveness
+that can vary like an influence.[11][12])
+Peirce further characterized the three semiotic elements  as follows:[13]
+1. Sign (or representamen[14]): that which represents the denoted object (cf. Saussure's "signifier").
+2. Object (or semiotic object): that which the sign represents (or as some put it, encodes). It can be anything thinkable, a law, a fact, or even a
+possibility (a semiotic object could even be fictional, such as Hamlet); those are partial objects; the total object is the universe of discourse,
+the totality of objects in that world to which one attributes the partial object. For example, perturbation of Neptune's orbit is a sign about
+Pluto, but not only about Pluto. The object may be
+1. immediate to the sign, the object as represented in the sign, or
+2. dynamic, the object as it really is, on which the immediate object is founded.
+3. Interpretant (or interpretant sign): a sign's meaning or ramification as formed into a further sign by interpreting (or, as some put it,
+decoding) the sign. The interpretant may be:
+1. immediate to the sign, a kind of possibility, all that the sign is suited to immediately express, for instance a word's usual meaning;
+2. dynamic, that is, the meaning as formed into an actual effect, for example an individual translation or a state of agitation, or
+3. final or normal, that is, the ultimate meaning that inquiry taken far enough would be destined to reach. It is a kind of norm or ideal
+end, with which an actual interpretant may, at most, coincide.
+Peirce explained that signs mediate between their objects and their interpretants in semiosis, the triadic process of determination. In
+semiosis a first  is determined or influenced to be a sign by a second , as its object. The object determines the sign to determine a third  as
+an interpretant. Firstness  itself is one of Peirce's three categories  of all phenomena, and is quality of feeling. Firstness is associated with
+a vague state of mind as feeling and a sense of the possibilities, with neither compulsion nor reflection. In semiosis the mind discerns an
+appearance or phenomenon, a potential sign. Secondness  is reaction or resistance, a category associated with moving from possibility to
+determinate actuality. Here, through experience outside of and collateral to the given sign or sign system, one recalls or discovers the
+object the sign refers to, for example when a sign consists in a chance semblance of an absent but remembered object. It is through one's
+collateral experience[15] that the object determines the sign to determine an interpretant. Thirdness  is representation or mediation, the
+category associated with signs, generality, rule, continuity, habit-taking and purpose. Here one forms an interpretant expressing a
+meaning or ramification of the sign about the object. When a second sign is considered, the initial interpretant may be confirmed, or
+new possible meanings may be ident ified. As each new sign is addressed, more interpretants, themselves signs, emerge. It can involve a
+mind's reading of nature, people, mathematics, anything.
+Peirce generalized the communicational idea of utterance and interpretation of a sign, to cover all signs:[16]4/1/26, 2:42 AM Sign (semiotics) - Wikipedia
+https://en.wikipedia.org/wiki/Sign_(semiotics) 3/9
+Admitting that connected Signs must have a Quasi-mind, it may further be declared that there can be no isolated sign.
+Moreover, signs require at least two Quasi-minds; a Quasi-utterer  and a Quasi-interpreter ; and although these two are at one
+(i.e., are one mind) in the sign itself, they must nevertheless be distinct. In the Sign they are, so to say, welded . Accordingly, it
+is not merely a fact of human Psychology, but a necessity of Logic, that every logical evolution of thought should be dialogic.
+According to Nattiez, writing with Jean Molino , the tripartite definition of sign, object and interpretant is based on the "trace " or neutral
+level , Saussure's "sound-image" (or "signified", thus Peirce's "representamen"). Thus, "a symbolic form...is not some 'intermediary' in a
+process of 'communication' that transmits the meaning intended by the author to the audience; it is instead the result of a complex
+process  of creation (the poietic  process) that has to do with the form as well as the content of the work; it is also the point of departure
+for a complex process of reception (the esthesic  process that reconstructs  a 'message'").[17]
+Molino's and Nattiez's diagram:
+Poietic Process Esthesic Process
+"Producer"→Trace←Receiver
+Peirce's theory of the sign therefore offered a powerful analysis of the signification system, its codes, and its processes of inference and
+learning—because the focus was often on natural or cultural context rather than linguistics, which only analyses usage in slow time
+whereas human semiotic interaction in the real world often has a chaotic blur of language and signal exchange. Nevertheless, the
+implication that triadic relations are structured to perpetuate themselves leads to a level of complexity not usually experienced in the
+routine of message creation and interpretation. Hence, different ways of expressing the idea have developed.
+By 1903,[18] Peirce came to classify signs  by three universal trichotomies dependent on his three categories (quality, fact, habit). He
+classified any sign:[19]
+1. by what stands as the sign—either (qualisign, also called a tone) a quality—or (sinsign, also called token) an individual fact—or (legisign,
+also called type) a rule, a habit;
+2. by how the sign stands for its object—either (icon) by its own quality, such that it resembles the object, regardless of factual connection
+and of interpretive rule of reference—or (index) by factual connection to its object, regardless of resemblance and of interpretive rule of
+reference—or (symbol) by rule or habit of interpreted reference to its object, regardless of resemblance and of factual connection; and
+3. by how the sign stands for its object to its interpretant—either (rheme, also called seme,[20] such as a term) as regards quality or possibility,
+as if the sign were a qualisign, though it can be qualisign, sinsign, or legisign—or (dicisign, also called pheme, such as a proposition) asClasses of triadic signs4/1/26, 2:42 AM Sign (semiotics) - Wikipedia
+https://en.wikipedia.org/wiki/Sign_(semiotics) 4/9
+Lines of joint classification of signs.
+Every sign is:[18]
+1. 2. 3.
+I.QualisignorSinsignorLegisign
+and
+II. Icon orIndexorSymbol
+and
+III.RhemeorDicisignorArgumentregards fact, as if the sign were an index, though it can be index or symbol—or (argument, also called delome[21]) as regards rule or habit.
+This is the trichotomy of all signs as building blocks in an inference process.
+Any qualisign is an icon. Sinsigns include some icons and some indices. Legisigns include some icons, some indices and all symbols.
+Any icon is a rheme. Indices (be they sinsigns or legisigns) include some rhemes and some dicisigns. Symbols include some rhemes, some
+dicisigns and all arguments.
+Because of those classificatory interdependences, the three trichotomies intersect to form ten
+(rather than 27) classes of signs. There are also various kinds of meaningful combination. Signs
+can be attached to one another. A photograph is an index with a meaningfully attached icon.
+Arguments are composed of dicisigns, and dicisigns are composed of rhemes. In order to be
+embodied, legisigns (types) need sinsigns (tokens) as their individual replicas or instances. A
+symbol depends as a sign on how it will be interpreted, regardless of resem blance or factual
+connection to its object; but the symbol's individual embodiment is an index to your experience
+of the object. A symbol is instanced by a specialized indexical sinsign. A symbol such as a
+sentence in a language prescribes qualities of appearance for its instance s, and is itself a replica
+of a symbol such as a proposition apart from expression in a particular language. Peirce covered both semantic and syntactical issues in
+his theoretical grammar, as he som etimes called it. He regarded form al semiotic, as logic, as furthermore encompassing study of
+arguments (hypothetical , deductive  and inductive ) and inquiry's methods including pragmatism ; and as allied to but distinct from
+logic's pure mathematics.
+Peirce sometimes referred to the ground  of a sign. The ground is the pure abstraction of a quality.[22] A sign's ground is the respect  in
+which the sign represents its object, e.g. as in literal and figurative language . For example, an icon presents  a characteristic or quality
+attributed to an object, while a symbol imputes  to an object a quality either presented by an icon or symbolized so as to evoke a mental
+icon.
+Peirce called an icon apart from a label, legend, or other index attached to it, a "hypoicon", and divided the hypoicon into three classes:
+(a) the image , which depends on a simple quality; (b) the diagram , whose internal relations, mainly dyadic or so taken, represent by
+analogy the relations in something; and (c) the metaphor , which represents the representative character of a sign by representing a
+parallelism in something else.[23] A diagram can be geometric, or can consist in an array of algebraic expressions, or even in the
+common form "All __ is ___" which is subjectable, like any diagram,  to logical or mathematical transformations. Peirce held that
+mathematics is done by diagrammatic thinking—observation of, and experimentation on, diagrams. Peirce developed for deductive logic
+a system of visual existential graphs , which continue to be researched today.4/1/26, 2:42 AM Sign (semiotics) - Wikipedia
+https://en.wikipedia.org/wiki/Sign_(semiotics) 5/9

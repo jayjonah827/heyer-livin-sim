@@ -1,0 +1,123 @@
+{
+  "$schema_version": "v1",
+  "schema_name": "glyph_event_record",
+  "description": "One record equals one measured event cycle.",
+  "required_top_level_fields": [
+    "record_id",
+    "source_id",
+    "domain",
+    "source_type",
+    "title",
+    "cycle_definition",
+    "irreversible_event",
+    "metrics",
+    "routing",
+    "snapshot",
+    "relations",
+    "notes"
+  ],
+  "enums": {
+    "domain": [
+      "research", "paleography", "art", "books",
+      "languages", "site", "math", "simulation"
+    ],
+    "source_type": [
+      "dataset", "image", "handwriting", "mirror-writing",
+      "text", "book", "language-note", "chart",
+      "simulation", "web-export", "essay", "quote"
+    ],
+    "route": [
+      "memory", "archive", "site", "gallery",
+      "blog", "math", "research", "reject"
+    ],
+    "status": [
+      "draft", "live", "archived", "flagged", "rejected"
+    ]
+  },
+  "rules": {
+    "valid_live_record_requires": [
+      "cycle_definition.cycle_start",
+      "cycle_definition.cycle_end",
+      "irreversible_event.event_definition",
+      "irreversible_event.event_position"
+    ],
+    "formula_clustering_ratio": "irreversible_event.event_position / cycle_definition.cycle_length",
+    "formula_inside_band": "metrics.convergence_band_min <= metrics.clustering_ratio <= metrics.convergence_band_max",
+    "formula_distance_from_reference": "abs(metrics.clustering_ratio - metrics.reference_point)"
+  },
+  "fields": {
+    "record_id": {"type": "string", "description": "Unique id for this event record.", "example": "gev_000001"},
+    "source_id": {"type": "string", "description": "Unique id for the original source object.", "example": "source_001"},
+    "domain": {"type": "string", "allowed_values_ref": "enums.domain"},
+    "source_type": {"type": "string", "allowed_values_ref": "enums.source_type"},
+    "title": {"type": "string", "description": "Human-readable record title."},
+    "cycle_definition": {
+      "type": "object",
+      "required": ["cycle_start", "cycle_end", "cycle_length", "cycle_unit"],
+      "fields": {
+        "cycle_start": {"type": "string"},
+        "cycle_end": {"type": "string"},
+        "cycle_length": {"type": "number"},
+        "cycle_unit": {"type": "string", "examples": ["time","steps","frames","turns","days","tokens","generations","years","lines","trials"]}
+      }
+    },
+    "irreversible_event": {
+      "type": "object",
+      "required": ["event_name", "event_definition", "event_position", "event_unit"],
+      "fields": {
+        "event_name": {"type": "string"},
+        "event_definition": {"type": "string"},
+        "event_position": {"type": "number"},
+        "event_unit": {"type": "string"}
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "required": ["clustering_ratio", "reference_point", "convergence_band_min", "convergence_band_max", "inside_band", "distance_from_reference"],
+      "fields": {
+        "clustering_ratio": {"type": "number"},
+        "reference_point": {"type": "number", "default": 0.39},
+        "convergence_band_min": {"type": "number", "default": 0.30},
+        "convergence_band_max": {"type": "number", "default": 0.50},
+        "inside_band": {"type": "boolean"},
+        "distance_from_reference": {"type": "number"}
+      }
+    },
+    "routing": {
+      "type": "object",
+      "required": ["route", "status"],
+      "fields": {
+        "route": {"type": "string", "allowed_values_ref": "enums.route"},
+        "status": {"type": "string", "allowed_values_ref": "enums.status"}
+      }
+    },
+    "snapshot": {
+      "type": "object",
+      "required": ["snapshot_time", "run_id", "tick_id", "version"],
+      "fields": {
+        "snapshot_time": {"type": "string"},
+        "run_id": {"type": "string"},
+        "tick_id": {"type": "string"},
+        "version": {"type": "string", "example": "v1"}
+      }
+    },
+    "relations": {
+      "type": "object",
+      "required": ["parent_record_id", "linked_records", "linked_files"],
+      "fields": {
+        "parent_record_id": {"type": ["string", "null"]},
+        "linked_records": {"type": "array", "items": "string"},
+        "linked_files": {"type": "array", "items": "string"}
+      }
+    },
+    "notes": {
+      "type": "object",
+      "required": ["method_note", "confidence_note", "review_note"],
+      "fields": {
+        "method_note": {"type": "string"},
+        "confidence_note": {"type": "string"},
+        "review_note": {"type": "string"}
+      }
+    }
+  }
+}

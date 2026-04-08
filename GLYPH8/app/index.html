@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRANSMISSION | Structural Constraint Engine</title>
+<meta name="description" content="Compute structural constraint ratios, classify zones, and generate schema-validated event records.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#0a0e14;--surface:#111820;--surface2:#161e28;--border:#1e2a38;
+--gold:#c8a84e;--teal:#2a9d8f;--red:#c44536;--green:#4a9;
+--text:#e8e4dd;--muted:#8a9aad;--white:#fff;
+--font:'Georgia','Times New Roman',serif;
+--mono:'SF Mono','Fira Code','Consolas',monospace;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6;min-height:100vh}
+a{color:var(--gold);text-decoration:none}
+
+/* HEADER */
+header{
+display:flex;align-items:center;justify-content:space-between;
+padding:16px 24px;border-bottom:1px solid var(--border);
+}
+header h1{font-size:1rem;letter-spacing:.15em;font-weight:400}
+header nav{display:flex;gap:20px;font-family:var(--mono);font-size:.75rem}
+header nav a{color:var(--muted)}header nav a:hover{color:var(--gold)}
+header nav a.active{color:var(--gold)}
+
+/* TABS */
+.tabs{
+display:flex;border-bottom:1px solid var(--border);
+font-family:var(--mono);font-size:.8rem;
+}
+.tab{
+padding:14px 24px;cursor:pointer;color:var(--muted);
+border-bottom:2px solid transparent;transition:all .2s;
+}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+
+/* PANELS */
+.panel{display:none;padding:32px 24px;max-width:1000px;margin:0 auto}
+.panel.active{display:block}
+
+/* COMPUTE PANEL */
+.compute-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:700px){.compute-grid{grid-template-columns:1fr}}
+.input-group{margin-bottom:16px}
+.input-group label{
+display:block;font-family:var(--mono);font-size:.7rem;
+letter-spacing:.1em;text-transform:uppercase;color:var(--teal);
+margin-bottom:6px;
+}
+.input-group input,.input-group select,.input-group textarea{
+width:100%;padding:10px 14px;background:var(--surface);
+border:1px solid var(--border);color:var(--text);
+font-family:var(--mono);font-size:.9rem;border-radius:4px;
+}
+.input-group input:focus,.input-group select:focus{
+outline:none;border-color:var(--gold);
+}
+.input-group select option{background:var(--surface);color:var(--text)}
+
+.btn{
+padding:12px 24px;font-family:var(--mono);font-size:.85rem;
+border:1px solid var(--gold);background:transparent;color:var(--gold);
+cursor:pointer;border-radius:4px;transition:all .2s;
+letter-spacing:.05em;
+}
+.btn:hover{background:var(--gold);color:var(--bg)}
+.btn.full{width:100%;margin-top:8px}
+.btn.secondary{border-color:var(--teal);color:var(--teal)}
+.btn.secondary:hover{background:var(--teal);color:var(--bg)}
+
+/* RESULT CARD */
+.result{
+background:var(--surface);border:1px solid var(--border);
+border-radius:6px;padding:32px;margin-top:24px;display:none;
+}
+.result.show{display:block}
+.result-header{text-align:center;margin-bottom:24px}
+.result-ratio{
+font-family:var(--mono);font-size:3rem;font-weight:400;
+margin-bottom:4px;
+}
+.result-zone{
+font-family:var(--mono);font-size:1rem;letter-spacing:.15em;
+padding:6px 16px;display:inline-block;border-radius:3px;
+}
+.zone-SUBORDINATED{background:#2a1418;color:var(--red);border:1px solid #3a2028}
+.zone-STRUCTURAL{background:#142a24;color:var(--teal);border:1px solid #1a3a2a}
+.zone-DOMINANT{background:#2a2a14;color:var(--gold);border:1px solid #3a3a1a}
+
+.result-detail{
+display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;
+}
+.result-detail .item{
+padding:12px;background:var(--surface2);border-radius:4px;
+}
+.result-detail .item .k{
+font-family:var(--mono);font-size:.7rem;color:var(--teal);
+letter-spacing:.1em;text-transform:uppercase;
+}
+.result-detail .item .v{
+font-family:var(--mono);font-size:.9rem;color:var(--text);margin-top:4px;
+}
+
+/* ZONE BAR */
+.zone-bar-mini{
+display:flex;height:8px;border-radius:4px;overflow:hidden;
+margin:16px 0;
+}
+.zone-bar-mini .zb-sub{flex:3;background:var(--red)}
+.zone-bar-mini .zb-str{flex:2;background:var(--teal)}
+.zone-bar-mini .zb-dom{flex:5;background:var(--gold)}
+.zone-marker{
+position:relative;height:0;
+}
+.zone-marker .pin{
+position:absolute;top:-22px;
+width:2px;height:14px;background:var(--white);
+}
+
+/* EVENT RECORD */
+.event-record{
+background:var(--bg);border:1px solid var(--border);
+border-radius:4px;padding:16px;margin-top:16px;
+font-family:var(--mono);font-size:.75rem;color:var(--muted);
+max-height:400px;overflow-y:auto;white-space:pre-wrap;
+word-break:break-all;
+}
+
+/* DOMAINS TABLE */
+.domain-table{width:100%;border-collapse:collapse;font-size:.85rem}
+.domain-table th{
+font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;
+text-transform:uppercase;color:var(--teal);
+padding:12px 8px;text-align:left;border-bottom:1px solid var(--border);
+}
+.domain-table td{
+padding:10px 8px;border-bottom:1px solid var(--border);
+}
+.domain-table tr{cursor:pointer;transition:background .2s}
+.domain-table tr:hover{background:var(--surface2)}
+.domain-table .zone-badge{
+font-family:var(--mono);font-size:.7rem;padding:3px 8px;
+border-radius:3px;letter-spacing:.05em;
+}
+
+/* JSON VIEWER */
+.json-viewer{
+background:var(--surface);border:1px solid var(--border);
+border-radius:6px;padding:24px;margin-top:16px;
+}
+.json-viewer pre{
+font-family:var(--mono);font-size:.8rem;color:var(--muted);
+overflow-x:auto;white-space:pre-wrap;
+}
+.json-viewer .key{color:var(--teal)}
+.json-viewer .str{color:var(--gold)}
+.json-viewer .num{color:#e07c5a}
+
+/* SECTION HEADS */
+.section-head{
+font-size:1.4rem;font-weight:400;margin-bottom:8px;
+}
+.section-sub{
+font-size:.9rem;color:var(--muted);margin-bottom:24px;
+}
+
+footer{
+text-align:center;padding:32px;font-size:.75rem;color:var(--muted);
+border-top:1px solid var(--border);margin-top:40px;
+}
+
+/* NAV BAR */
+.prop-nav{
+display:flex;justify-content:center;gap:24px;
+padding:10px;background:var(--surface);
+font-family:var(--mono);font-size:.7rem;
+border-bottom:1px solid var(--border);
+}
+.prop-nav a{color:var(--muted)}
+.prop-nav a:hover{color:var(--gold)}
+.prop-nav a.here{color:var(--teal)}
+</style>
+</head>
+<body>
+
+<div class="prop-nav">
+<a href="https://heyerlivin.com">.com</a>
+<a href="https://heyerlivin.shop">.shop</a>
+<a class="here" href="#">.space</a>
+<a href="https://glyphhrlvn4culturalnav.space">glyphhrlvn4culturalnav.space</a>
+</div>
+
+<header>
+<h1>TRANSMISSION</h1>
+<nav>
+<a href="https://heyerlivin.com">Heyer Livin</a>
+<a href="https://heyerlivin.shop">Shop</a>
+</nav>
+</header>
+
+<div class="tabs">
+<div class="tab active" onclick="showPanel('compute')">Compute</div>
+<div class="tab" onclick="showPanel('domains')">Domains</div>
+<div class="tab" onclick="showPanel('events')">Events</div>
+<div class="tab" onclick="showPanel('about')">About</div>
+</div>
+
+<!-- COMPUTE PANEL -->
+<div class="panel active" id="panel-compute">
+<h2 class="section-head">Structural Constraint Engine</h2>
+<p class="section-sub">R = x / (x + y²) — Patent Pending April 2026</p>
+
+<div class="compute-grid">
+<div>
+<div class="input-group">
+<label>Domain</label>
+<select id="inp-domain" onchange="prefill()">
+<option value="">— Custom —</option>
+<option value="femtech">Women's Health / FemTech</option>
+<option value="ai_literacy">AI Literacy / Lower-Income Workers</option>
+<option value="higher_ed">Higher Education Access</option>
+<option value="oral_tradition">Oral Tradition / Cultural Transmission</option>
+<option value="political_rep">Women in Political Representation</option>
+<option value="mental_health">Mental Health Peer Support</option>
+<option value="repro_autonomy">Reproductive Autonomy / Labor Economics</option>
+<option value="gig_economy">Gig Economy / Platform Labor</option>
+<option value="loneliness">Loneliness / Social Belonging</option>
+<option value="family_planning">Family Planning Access (Global South)</option>
+<option value="hims_womens">HIMS Women's Health R&D Share</option>
+<option value="hims_telehealth">HIMS Telehealth Access Equity</option>
+<option value="hims_penetration">HIMS Subscriber Market Penetration</option>
+</select>
+</div>
+<div class="input-group">
+<label>x (constrained partition)</label>
+<input type="number" id="inp-x" step="any" placeholder="e.g. 0.05">
+</div>
+<div class="input-group">
+<label>x description</label>
+<input type="text" id="inp-x-desc" placeholder="e.g. 5% R&D funding share">
+</div>
+<div class="input-group">
+<label>y (dominant partition)</label>
+<input type="number" id="inp-y" step="any" placeholder="e.g. 0.95">
+</div>
+<div class="input-group">
+<label>y description</label>
+<input type="text" id="inp-y-desc" placeholder="e.g. 95% default allocation">
+</div>
+<div class="input-group">
+<label>Source identifier</label>
+<input type="text" id="inp-source" placeholder="e.g. WHO-2025-report">
+</div>
+<button class="btn full" onclick="compute()">COMPUTE R</button>
+<button class="btn full secondary" onclick="exportRecord()">EXPORT EVENT RECORD</button>
+</div>
+<div>
+<div class="result" id="result-card">
+<div class="result-header">
+<div class="result-ratio" id="result-ratio">—</div>
+<div class="result-zone" id="result-zone">—</div>
+</div>
+<div class="zone-bar-mini">
+<div class="zb-sub"></div>
+<div class="zb-str"></div>
+<div class="zb-dom"></div>
+</div>
+<div class="result-detail">
+<div class="item"><div class="k">Formula</div><div class="v" id="r-formula">—</div></div>
+<div class="item"><div class="k">Zone</div><div class="v" id="r-zone-text">—</div></div>
+<div class="item"><div class="k">Distance from 0.39</div><div class="v" id="r-distance">—</div></div>
+<div class="item"><div class="k">Inside Band</div><div class="v" id="r-band">—</div></div>
+<div class="item"><div class="k">Lower Threshold</div><div class="v">0.30</div></div>
+<div class="item"><div class="k">Upper Threshold</div><div class="v">0.50</div></div>
+</div>
+<div class="event-record" id="event-json" style="display:none"></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- DOMAINS PANEL -->
+<div class="panel" id="panel-domains">
+<h2 class="section-head">35-Domain Master Map</h2>
+<p class="section-sub">Each row = one event record. Click to load into the compute engine.</p>
+<table class="domain-table">
+<thead><tr><th>Domain</th><th>x</th><th>y</th><th>R</th><th>Zone</th><th>Path</th></tr></thead>
+<tbody id="domain-tbody"></tbody>
+</table>
+</div>
+
+<!-- EVENTS PANEL -->
+<div class="panel" id="panel-events">
+<h2 class="section-head">Event Record Archive</h2>
+<p class="section-sub">All computed event records from this session. Export individually or as batch JSON.</p>
+<div id="event-list"></div>
+<button class="btn" onclick="exportAll()" style="margin-top:16px">EXPORT ALL RECORDS</button>
+</div>
+
+<!-- ABOUT PANEL -->
+<div class="panel" id="panel-about">
+<h2 class="section-head">TRANSMISSION</h2>
+<p class="section-sub">One Measurement. Every Domain. A Living Data Economy.</p>
+<p style="margin-bottom:16px">TRANSMISSION is the operational infrastructure built on the structural constraint ratio R = x / (x + y²), filed as a provisional patent by Jair Valley / Heyer Livin LLC on April 6, 2026.</p>
+<p style="margin-bottom:16px">The ratio takes any system where one group holds access (x) and another holds dominance (y), and returns a single dimensionless number between 0 and 1. That number classifies the distribution into one of three zones:</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0">
+<div style="background:#1a1014;padding:16px;border-radius:4px;text-align:center">
+<div style="font-family:var(--mono);color:var(--red);font-size:.8rem;letter-spacing:.1em">SUBORDINATED</div>
+<div style="font-family:var(--mono);color:var(--muted);font-size:.75rem;margin-top:4px">R &lt; 0.30</div>
+</div>
+<div style="background:#141a14;padding:16px;border-radius:4px;text-align:center">
+<div style="font-family:var(--mono);color:var(--teal);font-size:.8rem;letter-spacing:.1em">STRUCTURAL</div>
+<div style="font-family:var(--mono);color:var(--muted);font-size:.75rem;margin-top:4px">0.30 – 0.50</div>
+</div>
+<div style="background:#1a1a10;padding:16px;border-radius:4px;text-align:center">
+<div style="font-family:var(--mono);color:var(--gold);font-size:.8rem;letter-spacing:.1em">DOMINANT</div>
+<div style="font-family:var(--mono);color:var(--muted);font-size:.75rem;margin-top:4px">R ≥ 0.50</div>
+</div>
+</div>
+<p style="margin-bottom:16px">The convergence attractor at R ≈ 0.39 represents the equilibrium state toward which systems of enforced inequality gravitate across labor markets, health systems, parliaments, and cultural transmission.</p>
+<p style="color:var(--muted);font-size:.85rem">Patent Pending · Jair Valley · Heyer Livin LLC · April 2026</p>
+</div>
+
+<footer>
+Heyer Livin LLC · Jair Valley · 2026 · Patent Pending<br>
+<a href="https://heyerlivin.com">heyerlivin.com</a> · <a href="https://heyerlivin.shop">heyerlivin.shop</a> · <a href="https://glyphhrlvn4culturalnav.space">glyphhrlvn4culturalnav.space</a>
+</footer>
+
+<script>
+const LOWER=0.30,UPPER=0.50,REF=0.39,SCHEMA_V="v1",THRESHOLD_V="thresholds_v1_2026-04-05";
+let records=[];
+
+const PRESETS={
+femtech:{x:0.05,y:0.95,xd:"5% R&D; funding share",yd:"95% default allocation",src:"WHO-FemTech-2025",domain:"Women's Health / FemTech"},
+ai_literacy:{x:0.20,y:0.80,xd:"20% AI-exposed share",yd:"80% excluded",src:"Fed-Reserve-SF-2025",domain:"AI Literacy / Lower-Income Workers"},
+higher_ed:{x:0.002,y:0.56,xd:"0.2% bottom-quartile aid adequacy",yd:"56% top-quartile over-aid",src:"NCES-2024",domain:"Higher Education Access"},
+oral_tradition:{x:0.15,y:0.75,xd:"15% digital preservation rate",yd:"75% at-risk",src:"UNESCO-Digital-Heritage-2024",domain:"Oral Tradition / Cultural Transmission"},
+political_rep:{x:0.268,y:0.732,xd:"26.8% global seats",yd:"73.2% male seats",src:"IPU-2025",domain:"Women in Political Representation"},
+mental_health:{x:0.30,y:0.80,xd:"30% rural county coverage",yd:"80% shortage zones",src:"HRSA-2024",domain:"Mental Health Peer Support"},
+repro_autonomy:{x:0.47,y:0.72,xd:"47% women's LFP",yd:"72% men's LFP",src:"BLS-IWPR-2025",domain:"Reproductive Autonomy / Labor Economics"},
+gig_economy:{x:0.71,y:0.62,xd:"71% above min. wage",yd:"62% wage theft exposure",src:"HRW-Gig-Trap-2025",domain:"Gig Economy / Platform Labor"},
+loneliness:{x:0.833,y:0.54,xd:"83.3% not persistently lonely",yd:"54% young adults lonely",src:"Surgeon-General-2023",domain:"Loneliness / Social Belonging"},
+family_planning:{x:0.634,y:0.366,xd:"63.4% served",yd:"36.6% unmet",src:"Guttmacher-2024",domain:"Family Planning Access (Global South)"},
+hims_womens:{x:0.05,y:0.95,xd:"5% healthcare R&D for women",yd:"95% default/male-standard",src:"HIMS-FY2025-10K",domain:"HIMS Women's Health R&D Share"},
+hims_telehealth:{x:0.25,y:0.75,xd:"25% with regular primary care access",yd:"75% without",src:"HIMS-FY2025-10K",domain:"HIMS Telehealth Access Equity"},
+hims_penetration:{x:0.0074,y:0.9926,xd:"2.5M subs / 340M addressable",yd:"99.26% unserved",src:"HIMS-FY2025-10K",domain:"HIMS Subscriber Market Penetration"},
+};
+
+const ALL_DOMAINS=[
+{domain:"Women's Health / FemTech",x:0.05,y:0.95,path:"Scholarships, Journals, Grants"},
+{domain:"AI Literacy / Lower-Income Workers",x:0.20,y:0.80,path:"Competitions, Grants"},
+{domain:"Higher Education Access",x:0.002,y:0.56,path:"Scholarships, Journals"},
+{domain:"Oral Tradition / Cultural Transmission",x:0.15,y:0.75,path:"Journals, Grants, Conferences"},
+{domain:"Women in Political Representation",x:0.268,y:0.732,path:"Competitions, Journals"},
+{domain:"Mental Health Peer Support",x:0.30,y:0.80,path:"Grants, Market Verticals"},
+{domain:"Reproductive Autonomy / Labor Economics",x:0.47,y:0.72,path:"Journals, Conferences"},
+{domain:"Gig Economy / Platform Labor",x:0.71,y:0.62,path:"Journals, Conferences"},
+{domain:"Loneliness / Social Belonging",x:0.833,y:0.54,path:"Market Verticals, Conferences"},
+{domain:"Family Planning Access (Global South)",x:0.634,y:0.366,path:"Grants, Journals"},
+{domain:"STEM Gender Gap",x:0.15,y:0.85,path:"Scholarships"},
+{domain:"First-Gen College Access",x:0.10,y:0.90,path:"Scholarships"},
+{domain:"Indigenous Language Preservation",x:0.02,y:0.98,path:"Grants"},
+{domain:"Black Maternal Mortality Access",x:0.08,y:0.92,path:"Grants, Journals"},
+{domain:"Rural Mental Health Coverage",x:0.12,y:0.88,path:"Grants"},
+{domain:"Gig Economy Wage Suppression",x:0.02,y:0.98,path:"Competitions"},
+{domain:"AI + Income Inequality Divergence",x:0.05,y:0.95,path:"Competitions"},
+{domain:"Oral Tradition Extinction",x:0.06,y:0.94,path:"Competitions, Grants"},
+{domain:"Contraceptive Access + Labor Economics",x:0.30,y:0.70,path:"Competitions, Journals"},
+{domain:"Cross-Domain Constraint Convergence",x:0.39,y:0.61,path:"Journals, Conferences"},
+{domain:"Mathematical Convergence of Inequality Ratios",x:0.39,y:0.61,path:"Journals"},
+{domain:"FemTech Market Gap Feedback Loop",x:0.02,y:0.98,path:"Journals"},
+{domain:"Gig Platform Wage Theft",x:0.12,y:0.88,path:"Journals"},
+{domain:"Women's Health Data Equity",x:0.18,y:0.82,path:"Grants"},
+{domain:"Cultural Transmission Preservation",x:0.05,y:0.95,path:"Grants"},
+{domain:"Rural Mental Health Peer Workforce",x:0.08,y:0.92,path:"Grants"},
+{domain:"AI Upskilling for Low-Income Workers",x:0.05,y:0.95,path:"Grants"},
+{domain:"First-Gen Women's Repro + Economic Autonomy",x:0.11,y:0.89,path:"Grants"},
+{domain:"FemTech Analytics SaaS",x:0.03,y:0.97,path:"Market Verticals"},
+{domain:"AI Literacy Training Platform",x:0.05,y:0.95,path:"Market Verticals"},
+{domain:"Oral Record + Family Transmission SaaS",x:0.015,y:0.985,path:"Market Verticals"},
+{domain:"Peer Mental Health Circle Platform",x:0.08,y:0.92,path:"Market Verticals"},
+{domain:"Constraint Analytics API",x:0.008,y:0.992,path:"Market Verticals"},
+{domain:"HIMS Women's Health R&D Share",x:0.05,y:0.95,path:"Stock Pitch"},
+{domain:"HIMS Telehealth Access Equity",x:0.25,y:0.75,path:"Stock Pitch"},
+];
+
+function computeR(x,y){return x/(x+y*y)}
+function classify(r){
+if(r<LOWER)return"SUBORDINATED";
+if(r<UPPER)return"STRUCTURAL";
+return"DOMINANT";
+}
+
+function showPanel(id){
+document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+document.getElementById('panel-'+id).classList.add('active');
+event.target.classList.add('active');
+}
+
+function prefill(){
+const sel=document.getElementById('inp-domain').value;
+if(!sel||!PRESETS[sel])return;
+const p=PRESETS[sel];
+document.getElementById('inp-x').value=p.x;
+document.getElementById('inp-y').value=p.y;
+document.getElementById('inp-x-desc').value=p.xd;
+document.getElementById('inp-y-desc').value=p.yd;
+document.getElementById('inp-source').value=p.src;
+}
+
+function compute(){
+const x=parseFloat(document.getElementById('inp-x').value);
+const y=parseFloat(document.getElementById('inp-y').value);
+if(isNaN(x)||isNaN(y)){alert('Enter numeric x and y values.');return}
+const r=computeR(x,y);
+const zone=classify(r);
+const dist=Math.abs(r-REF);
+const inside=r>=LOWER&&r<UPPER;
+
+document.getElementById('result-ratio').textContent=r.toFixed(4);
+const zoneEl=document.getElementById('result-zone');
+zoneEl.textContent=zone;
+zoneEl.className='result-zone zone-'+zone;
+document.getElementById('r-formula').textContent=`${x} / (${x} + ${y}²) = ${r.toFixed(6)}`;
+document.getElementById('r-zone-text').textContent=zone+(inside?' (convergence band)':'');
+document.getElementById('r-distance').textContent=dist.toFixed(4);
+document.getElementById('r-band').textContent=inside?'YES':'NO';
+document.getElementById('result-card').classList.add('show');
+
+const domSel=document.getElementById('inp-domain');
+const domName=domSel.selectedOptions[0].text==='— Custom —'?'custom':domSel.selectedOptions[0].text;
+
+const record=makeRecord(x,y,r,zone,dist,inside,domName);
+records.push(record);
+updateEventList();
+
+const jsonEl=document.getElementById('event-json');
+jsonEl.style.display='block';
+jsonEl.textContent=JSON.stringify(record,null,2);
+}
+
+function makeRecord(x,y,r,zone,dist,inside,domain){
+const now=new Date().toISOString();
+const id='EVT-'+Date.now().toString(36).toUpperCase();
+return{
+record_id:id,
+source_id:document.getElementById('inp-source').value||'manual-input',
+domain:domain,
+source_type:'computed',
+title:`Structural Constraint: ${domain}`,
+cycle_definition:{unit:'snapshot',period:now.slice(0,10)},
+irreversible_event:{description:document.getElementById('inp-x-desc').value+' vs '+document.getElementById('inp-y-desc').value},
+metrics:{
+ratio:parseFloat(r.toFixed(6)),
+reference_point:REF,
+convergence_band_min:LOWER,
+convergence_band_max:UPPER,
+inside_band:inside,
+distance_from_reference:parseFloat(dist.toFixed(6)),
+x_partition:x,
+y_partition:y,
+x_description:document.getElementById('inp-x-desc').value,
+y_description:document.getElementById('inp-y-desc').value
+},
+classification:zone,
+routing:{status:'computed',destination:'archive'},
+snapshot:{
+snapshot_time:now,
+run_id:'session-'+Date.now().toString(36),
+tick_id:1,
+schema_version:SCHEMA_V
+},
+mapping_rule_version:'protocol_v1_'+domain.replace(/[^a-zA-Z0-9]/g,'_').toLowerCase(),
+threshold_set_version:THRESHOLD_V,
+record_version:'v1',
+relations:{},
+notes:{generated_by:'TRANSMISSION Engine v1',patent:'pending_april_2026'}
+};
+}
+
+function updateEventList(){
+const el=document.getElementById('event-list');
+if(!records.length){el.innerHTML='<p style="color:var(--muted)">No event records yet. Use the Compute tab to generate records.</p>';return}
+el.innerHTML=records.map((r,i)=>`
+<div class="json-viewer" style="margin-bottom:12px">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+<span style="font-family:var(--mono);font-size:.8rem;color:var(--teal)">${r.record_id}</span>
+<span class="result-zone zone-${r.classification}" style="font-size:.7rem">${r.classification}</span>
+</div>
+<div style="font-family:var(--mono);font-size:.85rem;color:var(--text);margin-bottom:4px">${r.domain} — R = ${r.metrics.ratio}</div>
+<pre style="font-size:.7rem;color:var(--muted);max-height:200px;overflow:auto">${JSON.stringify(r,null,2)}</pre>
+</div>
+`).join('');
+}
+
+function exportRecord(){
+if(!records.length){alert('Compute a ratio first.');return}
+const last=records[records.length-1];
+const blob=new Blob([JSON.stringify(last,null,2)],{type:'application/json'});
+const a=document.createElement('a');
+a.href=URL.createObjectURL(blob);
+a.download=last.record_id+'.json';
+a.click();
+}
+
+function exportAll(){
+if(!records.length){alert('No records to export.');return}
+const blob=new Blob([JSON.stringify(records,null,2)],{type:'application/json'});
+const a=document.createElement('a');
+a.href=URL.createObjectURL(blob);
+a.download='TRANSMISSION_event_records_'+new Date().toISOString().slice(0,10)+'.json';
+a.click();
+}
+
+// POPULATE DOMAINS TABLE
+function populateDomains(){
+const tbody=document.getElementById('domain-tbody');
+ALL_DOMAINS.forEach(d=>{
+const r=computeR(d.x,d.y);
+const zone=classify(r);
+const tr=document.createElement('tr');
+let zc='';
+if(zone==='SUBORDINATED')zc='background:#1a1014;color:var(--red)';
+else if(zone==='STRUCTURAL')zc='background:#141a14;color:var(--teal)';
+else zc='background:#1a1a10;color:var(--gold)';
+tr.innerHTML=`
+<td>${d.domain}</td>
+<td style="font-family:var(--mono);font-size:.8rem">${d.x}</td>
+<td style="font-family:var(--mono);font-size:.8rem">${d.y}</td>
+<td style="font-family:var(--mono);font-size:.8rem">${r.toFixed(4)}</td>
+<td><span class="zone-badge" style="${zc}">${zone}</span></td>
+<td style="font-size:.8rem;color:var(--muted)">${d.path}</td>
+`;
+tr.onclick=()=>{
+document.getElementById('inp-x').value=d.x;
+document.getElementById('inp-y').value=d.y;
+document.getElementById('inp-x-desc').value='constrained partition';
+document.getElementById('inp-y-desc').value='dominant partition';
+document.getElementById('inp-source').value='blueprint-2026';
+document.getElementById('inp-domain').value='';
+showPanel('compute');
+document.querySelector('.tab').click();
+};
+tbody.appendChild(tr);
+});
+}
+
+populateDomains();
+updateEventList();
+</script>
+</body>
+</html>
