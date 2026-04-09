@@ -9,7 +9,6 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from pathlib import Path
 import json
-import os
 
 # Import the constraint engine
 from glyph_constraint import (
@@ -25,6 +24,9 @@ app = FastAPI(
 )
 
 BASE = Path(__file__).parent
+# Full clone includes repo root; GitHub Pages / your plan often use root `index.html`
+# (e.g. Interactive Data Simulator). Render `rootDir` is GLYPH8 only, but parent paths exist.
+REPO_ROOT = BASE.parent
 
 # ── API Routes ──────────────────────────────────────────────────────
 
@@ -98,18 +100,25 @@ for subdir in ["app", "shop", "patent", "research", "deck", "pitch", "blueprint"
     if dirpath.is_dir():
         app.mount(f"/{subdir}", StaticFiles(directory=str(dirpath), html=True), name=subdir)
 
-# Root index
+# Root index — prefer repo-root simulator / landing (matches GitHub default), else GLYPH8
 @app.get("/", response_class=HTMLResponse)
 def root():
-    index = BASE / "index.html"
-    if index.exists():
-        return HTMLResponse(index.read_text())
+    for candidate in (REPO_ROOT / "index.html", BASE / "index.html"):
+        if candidate.is_file():
+            return HTMLResponse(candidate.read_text(encoding="utf-8"))
     return HTMLResponse("<h1>TRANSMISSION</h1><p>Engine running.</p>")
 
-# Catch-all for root-level static files
+# Catch-all for static files (repo root first, then GLYPH8)
 @app.get("/{filename:path}")
 async def static_file(filename: str):
-    filepath = BASE / filename
-    if filepath.is_file() and filepath.resolve().is_relative_to(BASE.resolve()):
-        return FileResponse(filepath)
+    if filename.startswith("api/"):
+        return JSONResponse(status_code=404, content={"error": "not found"})
+    for root in (REPO_ROOT, BASE):
+        filepath = (root / filename).resolve()
+        try:
+            root_resolved = root.resolve()
+            if filepath.is_file() and filepath.is_relative_to(root_resolved):
+                return FileResponse(filepath)
+        except (OSError, ValueError):
+            continue
     return JSONResponse(status_code=404, content={"error": "not found"})
